@@ -1,0 +1,51 @@
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+<style>
+    img {
+        max-width:100px;
+        margin-left:30px;
+    }
+    .item {
+        border: 1px solid;
+        width:150px;
+    }
+    .price {
+        text-align: center;
+        color:
+    }
+    .buy {
+        margin-left:60px;
+        margin-bottom:10px;
+    }
+
+</style>
+<div class='item'>
+    <img src="https://goo.gl/C8z7jv">
+    <p class='price'>Price <span>10$</span></p>
+    <button class='buy'>Buy</button>
+</div>
+
+<div style="height:20px;"></div>
+
+<div class='item'>
+    <img src="https://goo.gl/C8z7jv">
+    <p class='price'>Price <span>10$</span></p>
+    <button class='buy'>Buy</button>
+</div>
+
+<div class="cart">
+    <p>Total: <span class='total'>0</span> items</p>
+</div>
+
+<script>
+    var sum = 0;
+    $( ".buy" ).click(function() {
+        $(this).each(function(){
+            sum += 1;
+        });
+
+        $('.total').text(sum);
+        console.log(sum);
+    });
+
+</script>
