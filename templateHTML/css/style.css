@@ -7,18 +7,121 @@ body {
     /*height: 12000px;*/
     overflow-x: hidden;
 }
+
 h5 {
     font-size: 15px;
 }
-ul li{
+
+ul li {
     display: inline;
 }
+
 label {
     margin-left: -20px;
 }
+
+.header-form-container {
+    background: #FFFFFF;
+    padding: 20px 0 16px;
+    position: relative;
+    z-index: 3;
+}
+
+.form-search {
+    display: inline-block;
+    width: 546px;
+    position: relative;
+    z-index: 1;
+    float: left;
+    /*margin-left: 142px;*/
+    border: 1px solid red;
+}
+
+.form-search input {
+    width: 87%;
+    height: 35px;
+}
+
+.form-search button {
+    margin-left: -2.9px;
+    height: 35px;
+}
+
+.header-link {
+    float: right;
+    position: relative;
+}
+
+#header-cart {
+    display: inline-block;
+    border: 1px solid red;
+}
+
+.header-cart {
+    border: 2px solid #fff;
+    padding: 5px 0px 5px 0px;
+    border-radius: 4px;
+    margin-left: 1px;
+    letter-spacing: .7px;
+    font-weight: 400;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.cart-count {
+    color: #4a4a4a;
+    background: #4CAF50;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 17px;
+    padding: 0 6px;
+    font-weight: 700;
+}
+
+.user-profile {
+    /*color: #fff;*/
+    border: 1px solid red;
+    font-size: 12px;
+    padding: 4px 0px 2px 0px;
+    position: relative;
+    vertical-align: top;
+    font-weight: 400;
+    line-height: 14px;
+    display: inline-block;
+    letter-spacing: .9px;
+}
+
+.user-profile button  {
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+
+/*.total {*/
+/*position: absolute;*/
+/*float: right;*/
+/*width: 30px;*/
+/*height: 30px;*/
+/*border-radius: 50%;*/
+/*background-color: #4CAF50;*/
+/*}*/
+
+/*.total p {*/
+/*text-align: center;*/
+/*margin-top: 2px;*/
+/*color: #ffffff;*/
+/*font-size: 1.3em;*/
+/*}*/
+
 .menu {
     /*position: relative;*/
 }
+
 .sign {
     position: absolute;
     top: 10px;
@@ -26,31 +129,18 @@ label {
     color: black;
     cursor: pointer;
 }
+
 .submenu {
-    position:relative;
-}
-.mycart {
     position: relative;
 }
-.total {
-    margin-top: -54px;
-    margin-left: 44px;
-    position: absolute;
-    float: right;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #4CAF50;
-}
-.total p {
-    text-align: center;
-    margin-top: 2px;
-    color: #ffffff;
-    font-size: 1.3em;
-}
+
+/*.mycart {*/
+/*position: relative;*/
+/*}*/
+
 .submenu-content {
     /*border: 1px solid red;*/
-    display:none;
+    display: none;
     position: absolute;
     background: #ffffff;
     min-width: 210px;
@@ -59,16 +149,19 @@ label {
     margin-top: -13%;
     z-index: 1;
 }
+
 /*.submenu-content li a {*/
-    /*color:red;*/
+/*color:red;*/
 /*}*/
-.submenu-content li a:hover{
-    color:green;
+.submenu-content li a:hover {
+    color: green;
     background: #DFDEDA;
 }
+
 .submenu:hover .submenu-content {
     display: block;
 }
+
 a, a:hover {
     text-decoration: none;
 }
@@ -151,9 +244,9 @@ header .collapse.in .nav {
     width: 150px;
 }
 
-.search, .cart-box {
-    white-space: nowrap;
-    padding: 30px;
+.cart-box {
+    /*margin-left: -30px;*/
+    padding: 2px;
 }
 
 .menu {
@@ -1630,28 +1723,35 @@ a.blog-link:hover::before, .blog-link a:hover::before {
     /*position: relative;*/
 }
 
-.rating  {
+.rating {
     font-size: 23px;
 }
-.rating-detail{
+
+.rating-detail {
     font-size: 30px;
 }
-.fontSize-rating{
+
+.fontSize-rating {
     font-size: 18px;
     margin-left: 10px;
 }
-.fontSize-rating a:hover{
+
+.fontSize-rating a:hover {
     color: #3D8901;
 }
-.sale-off{
- font-size: 25px;
+
+.sale-off {
+    font-size: 25px;
 }
-.sale-off-detail{
+
+.sale-off-detail {
     font-size: 20px;
 }
-.review{
+
+.review {
     margin-left: -40px;
 }
+
 .shop-nav .navbar-form, #blog-nav .navbar-form {
     display: flex;
     align-items: center;
@@ -3810,7 +3910,7 @@ h3.comment-reply-title {
     /*background: #000;
 	color: #fff;*/
     padding: 10px 15px 0;
-    border:1px solid ;
+    border: 1px solid;
 }
 
 .header-top button {

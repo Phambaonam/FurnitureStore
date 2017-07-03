@@ -13,50 +13,86 @@
 </head>
 <body>
 <header>
-    <nav class="header-top">
-			<span class="quick-mobile">
-				<i class="fa fa-phone"></i> 0986090925
-			</span>
-        <span class="quick-mail hidden-xs">
-				<i class="fa fa-envelope-o"></i> hieu.do212@gmail.com
-        </span>
-        <span class="pull-right">
-            <div class="cart-box mycart">
-            <a href="wishlist.html">
-                <i class="fa fa-heart-o"></i>
-            </a>
-            <a href="cart.html">
-                <i class="fa fa-shopping-cart"></i><div class='total'><p>0</p></div>
-            </a>
+    <div class="header-form-container">
+        <div class="container">
+            <div class="form-search">
+                <form action="#" id="search_form">
+                    <div class="search-wrap">
+                        <input type="text" name="q" placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ...">
+                        <button type="submit">
+                            <span>Tìm Kiếm</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="header-link">
+                <div class="user-profile ">
+                    <div class="before-log">
+                        <button data-toggle="modal" data-tabs="login" data-target=".user-modal" class="user">Đăng nhập</button>
+                        <button data-toggle="modal" data-tabs="signup" data-target=".user-modal" class="user">Đăng ký</button>
+                    </div>
+                    <div class="logged">
+                        <!-- <i class="fa fa-user-o"></i> -->
+                        <img src="img/feedback_1.jpg">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Đỗ
+                                Hoàng Hiếu
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="user-account.html">Quản lý tài khoản</a></li>
+                                <li><a id="logout-btn" href="#">Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="header-cart">
+                    <div class="cart-box mycart">
+                        <a href="cart.html" class="header-cart item">
+                            <i class="fa fa-shopping-cart"></i>
+                            Giỏ Hàng
+                            <span class='cart-count'>0</span>
+                        </a>
+                        <a href="wishlist.html" class="header-cart item">
+                        <i class="fa fa-heart-o"></i>
+                            Yêu Thích
+                            <span class='cart-count'>0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        </span>
-        <!--<span class="pull-right">-->
-				<!--<div class="before-log">-->
-					<!--<button data-toggle="modal" data-tabs="login" data-target=".user-modal">Đăng nhập</button>-->
-					<!--<button data-toggle="modal" data-tabs="signup" data-target=".user-modal">Đăng ký</button>-->
-				<!--</div>-->
-				<!--<div class="logged">-->
-					<!--&lt;!&ndash; <i class="fa fa-user-o"></i> &ndash;&gt;-->
-					<!--<img src="img/feedback_1.jpg">-->
-					<!--<div class="dropdown">-->
-						<!--<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Đỗ Hoàng Hiếu</button>-->
-						<!--<ul class="dropdown-menu dropdown-menu-right">-->
-							<!--<li><a href="user-account.html">Quản lý tài khoản</a></li>-->
-							<!--<li><a id="logout-btn" href="#">Đăng xuất</a></li>-->
-						<!--</ul>-->
-					<!--</div>-->
-				<!--</div>-->
+    </div>
+    <!--<nav class="header-top">-->
+			<!--<span class="quick-mobile">-->
+				<!--<i class="fa fa-phone"></i> 0986090925-->
 			<!--</span>-->
-    </nav>
+        <!--<span class="quick-mail hidden-xs">-->
+				<!--<i class="fa fa-envelope-o"></i> hieu.do212@gmail.com-->
+        <!--</span>-->
+        <!--<span class="pull-right">-->
+        <!--<div class="before-log">-->
+        <!--<button data-toggle="modal" data-tabs="login" data-target=".user-modal">Đăng nhập</button>-->
+        <!--<button data-toggle="modal" data-tabs="signup" data-target=".user-modal">Đăng ký</button>-->
+        <!--</div>-->
+        <!--<div class="logged">-->
+        <!--&lt;!&ndash; <i class="fa fa-user-o"></i> &ndash;&gt;-->
+        <!--<img src="img/feedback_1.jpg">-->
+        <!--<div class="dropdown">-->
+        <!--<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Đỗ Hoàng Hiếu</button>-->
+        <!--<ul class="dropdown-menu dropdown-menu-right">-->
+        <!--<li><a href="user-account.html">Quản lý tài khoản</a></li>-->
+        <!--<li><a id="logout-btn" href="#">Đăng xuất</a></li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</span>-->
+    <!--</nav>-->
     <nav class="navbar navbar-default">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a href="#" class="search" data-toggle="slide-collapse" data-target="#search-form">
-            <i class="fa fa-search"></i><span class="hidden-xs"> Tìm kiếm</span>
-        </a>
         <div class="container">
             <div class="menu row">
                 <div class="collapse navbar-collapse" id="menu-collapse">
@@ -70,10 +106,21 @@
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Liên hệ</a></li>
                     </ul>
+
                 </div>
             </div>
         </div>
-
+        <!--<div class="pull-right">-->
+        <!--<div class="cart-box mycart">-->
+        <!--<a href="wishlist.html">-->
+        <!--<i class="fa fa-heart-o"></i>-->
+        <!--</a>-->
+        <!--<a href="cart.html">-->
+        <!--<i class="fa fa-shopping-cart"></i>-->
+        <!--<div class='total'><p>0</p></div>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
         <a class="logo" href="home.html"><img src="img/logo-min.png"></a>
         <div id="search-form">
             <form>
@@ -170,15 +217,20 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lọc theo hãng sản xuất <span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li class="checkbox"><label><input type="checkbox" name="brand1" value="brand1">IKEA</label></li>
+                                <li class="checkbox"><label><input type="checkbox" name="brand1"
+                                                                   value="brand1">IKEA</label></li>
                                 <li role="separator" class="divider"></li>
-                                <li class="checkbox"><label><input type="checkbox" name="brand2" value="brand2">Hooker</label></li>
+                                <li class="checkbox"><label><input type="checkbox" name="brand2"
+                                                                   value="brand2">Hooker</label></li>
                                 <li role="separator" class="divider"></li>
-                                <li class="checkbox"><label><input type="checkbox" name="brand3" value="brand3">Ashley</label></li>
+                                <li class="checkbox"><label><input type="checkbox" name="brand3"
+                                                                   value="brand3">Ashley</label></li>
                                 <li role="separator" class="divider"></li>
-                                <li class="checkbox"><label><input type="checkbox" name="brand4" value="brand4">Stanford</label></li>
+                                <li class="checkbox"><label><input type="checkbox" name="brand4" value="brand4">Stanford</label>
+                                </li>
                                 <li role="separator" class="divider"></li>
-                                <li class="checkbox"><label><input type="checkbox" name="brand5" value="brand5">Stickley</label></li>
+                                <li class="checkbox"><label><input type="checkbox" name="brand5" value="brand5">Stickley</label>
+                                </li>
                                 <li role="separator" class="divider"></li>
                             </ul>
                         </form>
@@ -254,17 +306,17 @@
                 <option value="sort4">Thứ tự theo giá: cao đến thấp</option>
             </select>
         </nav>
+
         <div class="product-list">
 
             <!--------- menu danh muc san pham start ----------------------->
             <ul class="nav nav-stacked col-xs-3 collapse navbar-collapse shop-nav">
                 <li class="search-box">
                     <div class="nav-title"><h4>Tìm sản phẩm</h4></div>
-                    <form class="navbar-form">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                     </form>
                 </li>
                 <li class="nav-title"><a data-toggle="display-all"><h4>Danh mục </h4></a></li>
@@ -497,6 +549,68 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-item chair arm-chair col-xs-6 col-lg-4">
+                        <div class="item-container">
+                            <div class="photo">
+                                <div id="product1" class="carousel slide carousel-inner" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="item active">
+                                        <img src="img/product_1a.jpg">
+                                    </div>
+                                </div>
+                                <div class="vertical-icon">
+                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                    <span class="buy"><i class="fa fa-shopping-cart"></i></span>
+                                    <a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="name description">
+                                <h3><a href="#">Eros Papasan</a></h3>
+                                <p><a href="#">by Kartell</a></p>
+                                <p>
+                                   <span class="price">
+                                        <del class="sale-off">$69.36</del>
+                                    <strong>$99.21</strong>
+                                   </span>
+                                </p>
+                                <p class="rating">
+                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>(5)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item chair arm-chair col-xs-6 col-lg-4">
+                        <div class="item-container">
+                            <div class="photo">
+                                <div id="product1" class="carousel slide carousel-inner" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="item active">
+                                        <img src="img/product_1a.jpg">
+                                    </div>
+                                </div>
+                                <div class="vertical-icon">
+                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                    <span class="buy"><i class="fa fa-shopping-cart"></i></span>
+                                    <a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="name description">
+                                <h3><a href="#">Eros Papasan</a></h3>
+                                <p><a href="#">by Kartell</a></p>
+                                <p>
+                                   <span class="price">
+                                        <del class="sale-off">$69.36</del>
+                                    <strong>$99.21</strong>
+                                   </span>
+                                </p>
+                                <p class="rating">
+                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>(5)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <nav>
                     <div class="pagination">
@@ -574,8 +688,8 @@
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
     var sum = 0;
-    $( ".buy" ).click(function() {
-        $(this).each(function(){
+    $(".buy").click(function () {
+        $(this).each(function () {
             sum += 1;
         });
         $('.total p').text(sum);
