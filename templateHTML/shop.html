@@ -16,6 +16,11 @@
     <div class="header-form-container">
         <div class="container">
             <div class="form-search">
+                <button type="button" class="navbar-toggle" id="menu-scroll">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <form action="#" id="search_form">
                     <div class="search-wrap">
                         <input type="text" name="q" placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ...">
@@ -28,15 +33,17 @@
             <div class="header-link">
                 <div class="user-profile ">
                     <div class="before-log">
-                        <button data-toggle="modal" data-tabs="login" data-target=".user-modal" class="user">Đăng nhập</button>
-                        <button data-toggle="modal" data-tabs="signup" data-target=".user-modal" class="user">Đăng ký</button>
+                        <button data-toggle="modal" data-tabs="login" data-target=".user-modal" class="user">Đăng nhập
+                        </button>
+                        <button data-toggle="modal" data-tabs="signup" data-target=".user-modal" class="user">Đăng ký
+                        </button>
                     </div>
                     <div class="logged">
                         <!-- <i class="fa fa-user-o"></i> -->
                         <img src="img/feedback_1.jpg">
                         <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Đỗ
-                                Hoàng Hiếu
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                Đỗ Hoàng Hiếu
                             </button>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a href="user-account.html">Quản lý tài khoản</a></li>
@@ -50,10 +57,10 @@
                         <a href="cart.html" class="header-cart item">
                             <i class="fa fa-shopping-cart"></i>
                             Giỏ Hàng
-                            <span class='cart-count'>0</span>
+                            <span class='cart-count total'>0</span>
                         </a>
                         <a href="wishlist.html" class="header-cart item">
-                        <i class="fa fa-heart-o"></i>
+                            <i class="fa fa-heart-o"></i>
                             Yêu Thích
                             <span class='cart-count'>0</span>
                         </a>
@@ -62,37 +69,8 @@
             </div>
         </div>
     </div>
-    <!--<nav class="header-top">-->
-			<!--<span class="quick-mobile">-->
-				<!--<i class="fa fa-phone"></i> 0986090925-->
-			<!--</span>-->
-        <!--<span class="quick-mail hidden-xs">-->
-				<!--<i class="fa fa-envelope-o"></i> hieu.do212@gmail.com-->
-        <!--</span>-->
-        <!--<span class="pull-right">-->
-        <!--<div class="before-log">-->
-        <!--<button data-toggle="modal" data-tabs="login" data-target=".user-modal">Đăng nhập</button>-->
-        <!--<button data-toggle="modal" data-tabs="signup" data-target=".user-modal">Đăng ký</button>-->
-        <!--</div>-->
-        <!--<div class="logged">-->
-        <!--&lt;!&ndash; <i class="fa fa-user-o"></i> &ndash;&gt;-->
-        <!--<img src="img/feedback_1.jpg">-->
-        <!--<div class="dropdown">-->
-        <!--<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Đỗ Hoàng Hiếu</button>-->
-        <!--<ul class="dropdown-menu dropdown-menu-right">-->
-        <!--<li><a href="user-account.html">Quản lý tài khoản</a></li>-->
-        <!--<li><a id="logout-btn" href="#">Đăng xuất</a></li>-->
-        <!--</ul>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</span>-->
-    <!--</nav>-->
+
     <nav class="navbar navbar-default">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
         <div class="container">
             <div class="menu row">
                 <div class="collapse navbar-collapse" id="menu-collapse">
@@ -110,17 +88,6 @@
                 </div>
             </div>
         </div>
-        <!--<div class="pull-right">-->
-        <!--<div class="cart-box mycart">-->
-        <!--<a href="wishlist.html">-->
-        <!--<i class="fa fa-heart-o"></i>-->
-        <!--</a>-->
-        <!--<a href="cart.html">-->
-        <!--<i class="fa fa-shopping-cart"></i>-->
-        <!--<div class='total'><p>0</p></div>-->
-        <!--</a>-->
-        <!--</div>-->
-        <!--</div>-->
         <a class="logo" href="home.html"><img src="img/logo-min.png"></a>
         <div id="search-form">
             <form>
@@ -311,14 +278,6 @@
 
             <!--------- menu danh muc san pham start ----------------------->
             <ul class="nav nav-stacked col-xs-3 collapse navbar-collapse shop-nav">
-                <li class="search-box">
-                    <div class="nav-title"><h4>Tìm sản phẩm</h4></div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                    </form>
-                </li>
                 <li class="nav-title"><a data-toggle="display-all"><h4>Danh mục </h4></a></li>
                 <li>
                     <button class=" product-group" type="button"><h4>Thiết kế theo phòng</h4>
@@ -611,6 +570,224 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-item chair arm-chair col-xs-6 col-lg-4">
+                        <div class="item-container">
+                            <div class="photo">
+                                <div id="product1" class="carousel slide carousel-inner" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="item active">
+                                        <img src="img/product_1a.jpg">
+                                    </div>
+                                </div>
+                                <div class="vertical-icon">
+                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                    <span class="buy"><i class="fa fa-shopping-cart"></i></span>
+                                    <a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="name description">
+                                <h3><a href="#">Eros Papasan</a></h3>
+                                <p><a href="#">by Kartell</a></p>
+                                <p>
+                                   <span class="price">
+                                        <del class="sale-off">$69.36</del>
+                                    <strong>$99.21</strong>
+                                   </span>
+                                </p>
+                                <p class="rating">
+                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>(5)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item chair arm-chair col-xs-6 col-lg-4">
+                        <div class="item-container">
+                            <div class="photo">
+                                <div id="product1" class="carousel slide carousel-inner" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="item active">
+                                        <img src="img/product_1a.jpg">
+                                    </div>
+                                </div>
+                                <div class="vertical-icon">
+                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                    <span class="buy"><i class="fa fa-shopping-cart"></i></span>
+                                    <a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="name description">
+                                <h3><a href="#">Eros Papasan</a></h3>
+                                <p><a href="#">by Kartell</a></p>
+                                <p>
+                                   <span class="price">
+                                        <del class="sale-off">$69.36</del>
+                                    <strong>$99.21</strong>
+                                   </span>
+                                </p>
+                                <p class="rating">
+                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>(5)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item chair arm-chair col-xs-6 col-lg-4">
+                        <div class="item-container">
+                            <div class="photo">
+                                <div id="product1" class="carousel slide carousel-inner" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="item active">
+                                        <img src="img/product_1a.jpg">
+                                    </div>
+                                </div>
+                                <div class="vertical-icon">
+                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                    <span class="buy"><i class="fa fa-shopping-cart"></i></span>
+                                    <a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="name description">
+                                <h3><a href="#">Eros Papasan</a></h3>
+                                <p><a href="#">by Kartell</a></p>
+                                <p>
+                                   <span class="price">
+                                        <del class="sale-off">$69.36</del>
+                                    <strong>$99.21</strong>
+                                   </span>
+                                </p>
+                                <p class="rating">
+                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>(5)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item chair arm-chair col-xs-6 col-lg-4">
+                        <div class="item-container">
+                            <div class="photo">
+                                <div id="product1" class="carousel slide carousel-inner" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="item active">
+                                        <img src="img/product_1a.jpg">
+                                    </div>
+                                </div>
+                                <div class="vertical-icon">
+                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                    <span class="buy"><i class="fa fa-shopping-cart"></i></span>
+                                    <a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="name description">
+                                <h3><a href="#">Eros Papasan</a></h3>
+                                <p><a href="#">by Kartell</a></p>
+                                <p>
+                                   <span class="price">
+                                        <del class="sale-off">$69.36</del>
+                                    <strong>$99.21</strong>
+                                   </span>
+                                </p>
+                                <p class="rating">
+                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>(5)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item chair arm-chair col-xs-6 col-lg-4">
+                        <div class="item-container">
+                            <div class="photo">
+                                <div id="product1" class="carousel slide carousel-inner" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="item active">
+                                        <img src="img/product_1a.jpg">
+                                    </div>
+                                </div>
+                                <div class="vertical-icon">
+                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                    <span class="buy"><i class="fa fa-shopping-cart"></i></span>
+                                    <a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="name description">
+                                <h3><a href="#">Eros Papasan</a></h3>
+                                <p><a href="#">by Kartell</a></p>
+                                <p>
+                                   <span class="price">
+                                        <del class="sale-off">$69.36</del>
+                                    <strong>$99.21</strong>
+                                   </span>
+                                </p>
+                                <p class="rating">
+                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>(5)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item chair arm-chair col-xs-6 col-lg-4">
+                        <div class="item-container">
+                            <div class="photo">
+                                <div id="product1" class="carousel slide carousel-inner" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="item active">
+                                        <img src="img/product_1a.jpg">
+                                    </div>
+                                </div>
+                                <div class="vertical-icon">
+                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                    <span class="buy"><i class="fa fa-shopping-cart"></i></span>
+                                    <a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="name description">
+                                <h3><a href="#">Eros Papasan</a></h3>
+                                <p><a href="#">by Kartell</a></p>
+                                <p>
+                                   <span class="price">
+                                        <del class="sale-off">$69.36</del>
+                                    <strong>$99.21</strong>
+                                   </span>
+                                </p>
+                                <p class="rating">
+                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>(5)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item chair arm-chair col-xs-6 col-lg-4">
+                        <div class="item-container">
+                            <div class="photo">
+                                <div id="product1" class="carousel slide carousel-inner" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="item active">
+                                        <img src="img/product_1a.jpg">
+                                    </div>
+                                </div>
+                                <div class="vertical-icon">
+                                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                                    <span class="buy"><i class="fa fa-shopping-cart"></i></span>
+                                    <a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="name description">
+                                <h3><a href="#">Eros Papasan</a></h3>
+                                <p><a href="#">by Kartell</a></p>
+                                <p>
+                                   <span class="price">
+                                        <del class="sale-off">$69.36</del>
+                                    <strong>$99.21</strong>
+                                   </span>
+                                </p>
+                                <p class="rating">
+                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>(5)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <nav>
                     <div class="pagination">
@@ -692,7 +869,56 @@
         $(this).each(function () {
             sum += 1;
         });
-        $('.total p').text(sum);
+        $('.total').text(sum);
+    });
+</script>
+
+<script type="text/javascript">
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > 460) {
+            $('header').addClass('fixed');
+            $('button#menu-scroll.navbar-toggle').css('display', 'block');
+            $('header').css('height', '71px');
+        } else {
+            $('header').removeClass('fixed');
+            $('button#menu-scroll.navbar-toggle').css('display', 'none');
+            $('header').css('height', '151px');
+        }
+
+    });
+    var click = 'onclicked'
+    //    var temp = 1
+    $(".form-search button").click(function () {
+        if (click === 'onclicked') {
+            $('header').css('height', '151px');
+            $('header .navbar').css('display', 'flex');
+            click = 'clicked again'
+        } else if (click === 'clicked again') {
+            $('header').css('height', '71px');
+            $('header .navbar').css('display', 'none');
+            click = 'onclicked';
+        }
+
+       /*******************
+        * Using switch ... case
+        switch (temp) {
+            case (1): {
+                $('header').css('height', '151px');
+                $('header .navbar').css('display', 'flex');
+                console.log(temp);
+                temp++
+            }
+                break
+            case(2): {
+                $('header').css('height', '71px');
+                $('header .navbar').css('display', 'none');
+                console.log(temp);
+                temp--
+            }
+                break
+            default:
+        }
+        *******************/
     });
 </script>
 </body>
