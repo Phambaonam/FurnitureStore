@@ -46,7 +46,9 @@
 								Đỗ Hoàng Hiếu
 							</button>
 							<ul class="dropdown-menu dropdown-menu-right">
-								<li><a href="user-account.html">Quản lý tài khoản</a></li>
+								<li><a href="user-account.html">Tài khoản của tôi</a></li>
+								<li><a href="#">Đơn hàng của tôi</a></li>
+								<li><a href="#">Danh sách Yêu thích</a></li>
 								<li><a id="logout-btn" href="#">Đăng xuất</a></li>
 							</ul>
 						</div>
@@ -177,15 +179,6 @@
 		</nav>
 		<div class="row">
 			<ul class="nav nav-stacked collapse navbar-collapse pull-right" id="blog-nav">
-				<li class="search-box">
-					<div class="nav-title"><h4>Tìm kiếm bài viết</h4></div>
-					<form class="navbar-form">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
-						</div>
-						<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-					</form>
-				</li>
 				<li class="nav-title"><a data-toggle="display-all"><h4>Danh mục bài viết</h4></a></li>
 				<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".tips"><h4>Mẹo hữu ích</h4></button><span class="number"></span></li>
 				<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".idea"><h4>Ý tưởng độc đáo</h4></button><span class="number"></span></li>
@@ -532,57 +525,71 @@
     var sum = 0;
     $(".buy").click(function () {
         $(this).each(function () {
-            sum += 1;
-        });
-        $('.total').text(sum);
-    });
+            sum += 1
+        })
+        $('.total').text(sum)
+    })
 </script>
-
 <script type="text/javascript">
+
     $(window).bind('scroll', function () {
         if ($(window).scrollTop() > 460) {
-            $('header').addClass('fixed');
-            $('button#menu-scroll.navbar-toggle').css('display', 'block');
-            $('header').css('height', '71px');
+            $('header').addClass('fixed')
+            $('button#menu-scroll.navbar-toggle').css('display', 'block')
+            $('header').css('height', '71px')
         } else {
-            $('header').removeClass('fixed');
-            $('button#menu-scroll.navbar-toggle').css('display', 'none');
-            $('header').css('height', '151px');
+            $('header').removeClass('fixed')
+            $('button#menu-scroll.navbar-toggle').css('display', 'none')
+            $('header').css('height', '151px')
         }
-
     });
     var click = 'onclicked'
-    //    var temp = 1
+    var temp = 1
     $(".form-search button").click(function () {
+        /********************
+         * Using if*/
         if (click === 'onclicked') {
             $('header').css('height', '151px');
             $('header .navbar').css('display', 'flex');
+            console.log(click);
             click = 'clicked again'
         } else if (click === 'clicked again') {
             $('header').css('height', '71px');
             $('header .navbar').css('display', 'none');
+            console.log(click);
             click = 'onclicked';
         }
+		/*******************/
+
         /*******************
          * Using switch ... case
          switch (temp) {
             case (1): {
-                $('header').css('height', '151px');
-                $('header .navbar').css('display', 'flex');
-                console.log(temp);
+                $('header').css('height', '151px')
+                $('header .navbar').css('display', 'flex')
+                console.log(temp)
                 temp++
             }
                 break
             case(2): {
-                $('header').css('height', '71px');
-                $('header .navbar').css('display', 'none');
-                console.log(temp);
+                $('header').css('height', '71px')
+                $('header .navbar').css('display', 'none')
+                console.log(temp)
                 temp--
             }
                 break
             default:
         }
-         *******************/
+         /*******************/
+        $(window).bind('scroll', function () {
+            if (click === 'onclicked' && $(window).scrollTop() < 460) {
+                console.log(3);
+                $('header .navbar').css('display', 'flex');
+            } else if (click === 'onclicked' && $(window).scrollTop() > 460) {
+                console.log(4);
+                $('header .navbar').css('display', 'none');
+            }
+        })
     });
 </script>
 </body>

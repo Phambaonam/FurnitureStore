@@ -20,7 +20,7 @@ label {
     margin-left: -20px;
 }
 header {
-    height: 151px;
+    /*height: 151px;*/
     position: relative;
     z-index: 99999;
 }
@@ -98,14 +98,14 @@ header.fixed .navbar{
 .cart-count {
     color: rgba(255, 255, 255, 0.91);
     background: #4CAF50;
-    width: 23px;
-    height: 23px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
     line-height: 20px;
     font-size: 17px;
-    padding: 0 6px;
+    padding-top: 4px;
     font-weight: 700;
 }
 
@@ -283,7 +283,10 @@ header .collapse.in .nav {
 #menu-collapse li:hover::before {
     transform: scale(1);
 }
-
+.dropdown-menu>li>a:hover {
+    color: green;
+    background-color: #DFDEDA;
+}
 @media (max-width: 767px) {
     #menu-collapse li::before {
         width: 4px;
@@ -1224,6 +1227,7 @@ i.fa-search-plus {
     text-align: center;
     transform: scale(0);
     transition: all 0.4s linear;
+    z-index: 3;
 }
 
 .img-info h3 {
@@ -1233,7 +1237,12 @@ i.fa-search-plus {
 .img-info strong, .img-info h3 {
     color: #fff;
 }
-
+.img-container .img-info h3 a {
+    color:#FFFFFF;
+}
+div.img-info h3 a:hover {
+    color:#4CAF50;
+}
 .img-container:hover .img-info {
     transform: scale(1);
 }
@@ -1305,6 +1314,12 @@ i.fa-search-plus {
     height: 0;
     transition: all 0.6s ease;
     overflow: hidden;
+}
+.project-title h3 a {
+    color:#FFFFFF;
+}
+.project-title h3 a:hover {
+    color:#4CAF50;
 }
 
 .project-container:hover .project-title {
@@ -1738,9 +1753,17 @@ a.blog-link:hover::before, .blog-link a:hover::before {
     font-size: 30px;
 }
 
+span.rating-detail:hover {
+    color: #3D8901;
+}
+
 .fontSize-rating {
     font-size: 18px;
     margin-left: 10px;
+}
+
+span.fontSize-rating:hover {
+    color: #3D8901;
 }
 
 .fontSize-rating a:hover {
@@ -1757,6 +1780,9 @@ a.blog-link:hover::before, .blog-link a:hover::before {
 
 .review {
     margin-left: -40px;
+}
+.review a:active {
+    text-decoration: none;
 }
 
 .shop-nav .navbar-form, #blog-nav .navbar-form {
@@ -4153,7 +4179,7 @@ h3.comment-reply-title {
 }
 
 .account-main {
-    margin: 80px auto;
+    /*margin: 80px auto;*/
 }
 
 @media (min-width: 768px) {
@@ -4204,6 +4230,8 @@ h3.comment-reply-title {
 .recent-orders, .general-info, .address-info {
     background: #fff;
     padding: 15px;
+    margin-top: 1px;
+    margin-bottom: 40px;
 }
 
 .recent-orders table {
@@ -4212,10 +4240,13 @@ h3.comment-reply-title {
 }
 
 .recent-orders th, .recent-orders td {
-    width: 25%;
+    width: auto;
     height: 36px;
+    text-align: center;
 }
-
+.recent-orders .order-item {
+    width:35%;
+}
 .recent-orders thead {
     background: #336699;
     color: #fff;
@@ -4288,17 +4319,21 @@ a.edit-detail:hover::before {
 }
 
 #account-info input[type="text"], .address-change input[type="text"] {
-    width: 100%;
+    /*width: 100%;*/
     background: #e7e7e7;
     border: 0;
     padding: 10px;
     margin: 5px 0;
 }
-
+div#account-info form ul li div input {
+    width: 300px;
+}
+div#account-info form ul li div input.radio-update {
+    width: 50px;
+}
 #account-info .disabled-input {
-    background: none;
-    border: 0;
-    padding: 15px 10px;
+    border: 1px solid;
+    padding: 7px 13px;
 }
 
 #account-info .disabled-input + button {

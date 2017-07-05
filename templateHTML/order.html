@@ -47,9 +47,9 @@
                             </button>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a href="user-account.html">Tài khoản của tôi</a></li>
-                                <li><a href="order.html">Đơn hàng của tôi</a></li>
-                                <li><a href="wishlist.html">Danh sách Yêu thích</a></li>
-                                <li><a href="home.html">Đăng xuất</a></li>
+                                <li><a href="#">Đơn hàng của tôi</a></li>
+                                <li><a href="#">Danh sách Yêu thích</a></li>
+                                <li><a id="logout-btn" href="#">Đăng xuất</a></li>
                             </ul>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
         </div>
     </div>
 </header>
-<div style="height:80px"></div>
+<div style="height: 80px;"></div>
 <div class="container account-main">
     <div class="row">
         <nav class="side-nav">
@@ -176,66 +176,204 @@
             </ul>
         </nav>
         <div class="tab-content">
-            <div id="account-info">
-                <h3>Thông tin cá nhân</h3>
-                <form>
-                    <ul>
-                        <form action="#" method="get">
-                            <li>
-                                <label>Email</label>
-                                <div class="input-field">
-                                    <input type="email" name="Email" value="hieu.do212@gmail.com">
-                                </div>
-                            </li>
-                            <li>
-                                <label>Password</label>
-                                <div class="input-field">
-                                    <input type="password" name="Password" value="min030515"/>
-                                </div>
-                            </li>
-                            <li>
-                                <label>Họ tên</label>
-                                <div class="input-field">
-                                    <input type="text" name="Name" id="name" value="Đỗ Hoàng Hiếu"/>
-                                </div>
-                            </li>
-                            <li>
-                                <label>Điện thoại</label>
-                                <div class="input-field">
-                                    <input type="text" name="Phone" id="phone" value="0986090925"/>
-                                </div>
-                            </li>
-                            <li>
-                                <label for="month">Ngày sinh:</label>
-                                <div class="input-field">
-                                    <select name="month" id="month">
-                                        <option>Tháng</option>
-                                        <option>1</option>
-                                    </select>
-                                    <select name="date" id="date">
-                                        <option >Ngày</option>
-                                    </select>
-                                    <select name="year" id="year">
-                                        <option >Năm</option>
-                                    </select>
-                                </div>
-                            </li>
-                            <li>
-                                <label for="gender">Giới tính:</label>
-                                <div>
-                                    <input type="radio" class="gender radio-update" name="Gender" id="male" value="Nam"/>
-                                    <label class="gender" for="male">Nam</label>
-                                    <input type="radio" class="gender radio-update" name="Gender" id="female" value="Nữ"/>
-                                    <label class="gender" for="female">Nữ</label>
-                                </div>
-                            </li>
-                            <li>
-                                <button type="submit" class="save-change"><i class="fa fa-floppy-o"></i> Lưu thông tin
-                                </button>
-                            </li>
-                        </form>
-                    </ul>
-                </form>
+            <div class="tab-pane active" id="history">
+                <div class="recent-orders">
+                    <h3>Lịch sử giao dịch</h3>
+                    <div class="history-filter">
+                        <strong>Lọc kết quả:</strong>
+                        <div class="date-block">
+                            <span>Từ ngày: </span><input type="date" name="start-date">
+                        </div>
+                        <div class="date-block">
+                            <span>Đến ngày: </span><input type="date" name="end-date">
+                        </div>
+                        <select>
+                            <option disabled="" hidden="" selected="">Theo tình trạng</option>
+                            <option>Chờ xử lý</option>
+                            <option>Đã gửi đi</option>
+                            <option>Đà đóng</option>
+                            <option>Đà hủy</option>
+                        </select>
+                    </div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th class="order-no">Mã đơn hàng</th>
+                            <th class="order-date">Ngày đặt hàng</th>
+                            <td class="order-item">Sản phẩm</td>
+                            <th class="order-sum">Tổng tiền</th>
+                            <th class="order-status">Tình trạng</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="order-item">
+                            <td class="order-no">
+                                <a href="order-detail.html">09052017</a>
+                            </td>
+                            <td class="order-date">
+                                09/05/2017
+                            </td>
+                            <td class="order-item-name">SIGNATURE CHAIR IGNATURE CHAIR IGNATURE CHAIR IGNATURE CHAIR </td>
+                            <td class="order-sum">
+                                4.400.000₫
+                            </td>
+                            <td class="order-status out-stock">
+                                Chờ xử lý
+                            </td>
+                        </tr>
+                        <tr class="order-item">
+                            <td class="order-no">
+                                <a href="order-detail.html">03052017</a>
+                            </td>
+                            <td class="order-date">
+                                03/05/2017
+                            </td>
+                            <td class="order-item-name">SIGNATURE CHAIR</td>
+                            <td class="order-sum">
+                                3.800.000₫
+                            </td>
+                            <td class="order-status in-stock">
+                                Đã chuyển đi
+                            </td>
+                        </tr>
+                        <tr class="order-item">
+                            <td class="order-no">
+                                <a href="order-detail.html">23042017</a>
+                            </td>
+                            <td class="order-date">
+                                23/04/2017
+                            </td>
+                            <td class="order-item-name">SIGNATURE CHAIR</td>
+                            <td class="order-sum">
+                                8.500.000₫
+                            </td>
+                            <td class="order-status order-closed">
+                                Đã đóng
+                            </td>
+                        </tr>
+                        <tr class="order-item">
+                            <td class="order-no">
+                                <a href="order-detail.html">01042017</a>
+                            </td>
+                            <td class="order-date">
+                                01/04/2017
+                            </td>
+                            <td class="order-item-name">SIGNATURE CHAIR</td>
+                            <td class="order-sum">
+                                10.900.000₫
+                            </td>
+                            <td class="order-status order-closed">
+                                Đã đóng
+                            </td>
+                        </tr>
+                        <tr class="order-item">
+                            <td class="order-no">
+                                <a href="order-detail.html">02032017</a>
+                            </td>
+                            <td class="order-date">
+                                02/03/2017
+                            </td>
+                            <td class="order-item-name">SIGNATURE CHAIR</td>
+                            <td class="order-sum">
+                                9.400.000₫
+                            </td>
+                            <td class="order-status order-canceled">
+                                Đã hủy
+                            </td>
+                        </tr>
+                        <tr class="order-item">
+                            <td class="order-no">
+                                <a href="order-detail.html">14022017</a>
+                            </td>
+                            <td class="order-date">
+                                14/02/2017
+                            </td>
+                            <td class="order-item-name">SIGNATURE CHAIR</td>
+                            <td class="order-sum">
+                                14.200.000₫
+                            </td>
+                            <td class="order-status order-closed">
+                                Đã đóng
+                            </td>
+                        </tr>
+                        <tr class="order-item">
+                            <td class="order-no">
+                                <a href="order-detail.html">01012017</a>
+                            </td>
+                            <td class="order-date">
+                                01/01/2017
+                            </td>
+                            <td class="order-item-name">SIGNATURE CHAIR</td>
+                            <td class="order-sum">
+                                11.000.000₫
+                            </td>
+                            <td class="order-status order-closed">
+                                Đã đóng
+                            </td>
+                        </tr>
+                        <tr class="order-item">
+                            <td class="order-no">
+                                <a href="order-detail.html">02122016</a>
+                            </td>
+                            <td class="order-date">
+                                02/12/2016
+                            </td>
+                            <td class="order-item-name">SIGNATURE CHAIR</td>
+                            <td class="order-sum">
+                                12.200.000₫
+                            </td>
+                            <td class="order-status order-closed">
+                                Đã đóng
+                            </td>
+                        </tr>
+                        <tr class="order-item">
+                            <td class="order-no">
+                                <a href="order-detail.html">11112016</a>
+                            </td>
+                            <td class="order-date">
+                                11/11/2016
+                            </td>
+                            <td class="order-item-name">SIGNATURE CHAIR</td>
+                            <td class="order-sum">
+                                11.100.000₫
+                            </td>
+                            <td class="order-status order-canceled">
+                                Đã hủy
+                            </td>
+                        </tr>
+                        <tr class="order-item">
+                            <td class="order-no">
+                                <a href="order-detail.html">29092016</a>
+                            </td>
+                            <td class="order-date">
+                                29/09/2016
+                            </td>
+                            <td class="order-item-name">SIGNATURE CHAIR</td>
+                            <td class="order-sum">
+                                9.900.000₫
+                            </td>
+                            <td class="order-status order-closed">
+                                Đã đóng
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <nav>
+                        <div class="pagination">
+                            <a class="prev page-no" href="#">
+                                <i class="fa fa-long-arrow-left"></i>
+                            </a>
+                            <a href="#" class="page-no current">1</a>
+                            <a href="#" class="page-no">2</a>
+                            <a href="#" class="page-no">3</a>
+                            <a href="#" class="page-no">4</a>
+                            <a href="#" class="page-no">5</a>
+                            <a class="next page-no" href="#">
+                                <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
@@ -281,9 +419,9 @@
         </div>
         <div class="row footer-bot">
             <a href="#" title="Kết nối qua Facebook"><i class="fa fa-facebook-official"></i></a>
-            <a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i></a>
-            <a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i></a>
-            <a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i>
+                <a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i>
+                    <a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i>
         </div>
     </div>
     <div class="container-fluid copyright">
@@ -309,7 +447,6 @@
 
     $(window).bind('scroll', function () {
         if ($(window).scrollTop() > 151) {
-            console.log(123);
             $('header').addClass('fixed')
             $('button#menu-scroll.navbar-toggle').css('display', 'block')
             $('header').css('height', '71px')
@@ -358,11 +495,11 @@
         }
          /*******************/
         $(window).bind('scroll', function () {
-            if (click === 'onclicked' && $(window).scrollTop() < 152) {
-//                console.log(3);
+            if (click === 'onclicked' && $(window).scrollTop() < 151) {
+                console.log(3);
                 $('header .navbar').css('display', 'flex');
             } else if (click === 'onclicked' && $(window).scrollTop() > 151) {
-//                console.log(4);
+                console.log(4);
                 $('header .navbar').css('display', 'none');
             }
         })

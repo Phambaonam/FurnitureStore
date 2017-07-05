@@ -71,4 +71,4 @@ https://www.google.com.vn/search?q=how+to+add+1+value+without+all+in+the+same+cl
    https://stackoverflow.com/questions/6081608/jquery-check-if-it-is-clicked-or-not
    https://stackoverflow.com/questions/15404890/jquery-check-if-button-is-clicked
 
-
+* Sử dụng ```javascript javascript:void(0) ```
