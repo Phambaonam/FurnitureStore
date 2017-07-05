@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tài khoản</title>
+    <title>Đơn hàng của tôi</title>
     <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
@@ -47,9 +47,9 @@
                             </button>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a href="user-account.html">Tài khoản của tôi</a></li>
-                                <li><a href="#">Đơn hàng của tôi</a></li>
-                                <li><a href="#">Danh sách Yêu thích</a></li>
-                                <li><a id="logout-btn" href="#">Đăng xuất</a></li>
+                                <li><a href="order.html">Đơn hàng của tôi</a></li>
+                                <li><a href="wishlist.html">Danh sách Yêu thích</a></li>
+                                <li><a href="home.html">Đăng xuất</a></li>
                             </ul>
                         </div>
                     </div>
@@ -171,14 +171,14 @@
             </div>
             <ul class="nav nav-stacked">
                 <li><a href="user-account.html">Tài khoản của tôi</a></li>
-                <li><a href="order.html">Đơn hàng của tôi</a></li>
+                <li class="active"><a href="order.html">Quản lý đơn hàng</a></li>
                 <li><a href="wishlist.html">Danh sách yêu thích</a></li>
             </ul>
         </nav>
         <div class="tab-content">
             <div class="tab-pane active" id="history">
                 <div class="recent-orders">
-                    <h3>Lịch sử giao dịch</h3>
+                    <h3>Đơn hàng của tôi</h3>
                     <div class="history-filter">
                         <strong>Lọc kết quả:</strong>
                         <div class="date-block">
@@ -358,22 +358,22 @@
                         </tr>
                         </tbody>
                     </table>
-                    <nav>
-                        <div class="pagination">
-                            <a class="prev page-no" href="#">
-                                <i class="fa fa-long-arrow-left"></i>
-                            </a>
-                            <a href="#" class="page-no current">1</a>
-                            <a href="#" class="page-no">2</a>
-                            <a href="#" class="page-no">3</a>
-                            <a href="#" class="page-no">4</a>
-                            <a href="#" class="page-no">5</a>
-                            <a class="next page-no" href="#">
-                                <i class="fa fa-long-arrow-right"></i>
-                            </a>
-                        </div>
-                    </nav>
                 </div>
+                <nav>
+                    <div class="pagination">
+                        <a class="prev page-no" href="#">
+                            <i class="fa fa-long-arrow-left"></i>
+                        </a>
+                        <a href="#" class="page-no current">1</a>
+                        <a href="#" class="page-no">2</a>
+                        <a href="#" class="page-no">3</a>
+                        <a href="#" class="page-no">4</a>
+                        <a href="#" class="page-no">5</a>
+                        <a class="next page-no" href="#">
+                            <i class="fa fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </nav>
             </div>
         </div>
     </div>

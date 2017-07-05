@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tài khoản</title>
+    <title>Đơn hàng của tôi</title>
     <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
@@ -47,9 +47,9 @@
                             </button>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a href="user-account.html">Tài khoản của tôi</a></li>
-                                <li><a href="#">Đơn hàng của tôi</a></li>
-                                <li><a href="#">Danh sách Yêu thích</a></li>
-                                <li><a id="logout-btn" href="#">Đăng xuất</a></li>
+                                <li><a href="order.html">Đơn hàng của tôi</a></li>
+                                <li><a href="wishlist.html">Danh sách Yêu thích</a></li>
+                                <li><a href="home.html">Đăng xuất</a></li>
                             </ul>
                         </div>
                     </div>
@@ -159,13 +159,7 @@
         </div>
     </div>
 </header>
-<button type="button" class="navbar-toggle side-nav-toggle collapsed" data-toggle="slide-collapse"
-        data-target=".side-nav">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-</button>
-
+<div style="height:80px"></div>
 <div class="container account-main">
     <div class="row">
         <nav class="side-nav">
@@ -176,561 +170,116 @@
                 </div>
             </div>
             <ul class="nav nav-stacked">
-                <li class="active"><a href="#general" data-toggle="tab">Quản lý tài khoản</a></li>
-                <li><a href="#account-info" data-toggle="tab">Thông tin cá nhân</a></li>
-                <li><a href="#address" data-toggle="tab">Sổ địa chỉ</a></li>
-                <li><a href="#history" data-toggle="tab">Lịch sử giao dịch</a></li>
+                <li><a href="user-account.html">Tài khoản của tôi</a></li>
+                <li class="active"><a href="order.html">Quản lý đơn hàng</a></li>
+                <li><a href="wishlist.html">Danh sách yêu thích</a></li>
             </ul>
         </nav>
         <div class="tab-content">
-            <div class="tab-pane active" id="general">
-                <div style="height:40px" class="col-sm-6">
+            <h3>Chi tiết đơn hàng #09052017 - <strong>Giao hàng thành công</strong></h3>
+            <div class="account-order-detail">
+                <div class="note">
+                    <h3>Thông báo</h3>
+                    <div class="ct">
+                        <div class="ct-row">
+                            <div class="ct-left">13:26 28/02/2017</div>
+                            <div class="ct-right">Chúng tôi vừa bàn giao đơn hàng của quý khách đến đối tác vận chuyển
+                                Tiki Team. Dự kiến giao hàng vào Thứ năm, 02/03/2017 -&gt; Thứ sáu, 03/03/2017
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="address-1">
+                    <h3>Địa chỉ người nhận </h3>
+                    <div>
+                        <p class="name">Phạm Bảo Nam</p>
+                        <p><span>Địa chỉ: </span>Số 14, ngõ 4, Nguyễn Đình Chiểu, Phường Lê Đại Hành, Quận Hai Bà Trưng, Hà Nội, Việt Nam</p>
+                        <p><span>Điện thoại:</span> 01638609594</p>
+                    </div>
+                </div>
+                <div class="payment-1">
+                    <h3>Phương thức vận chuyển</h3>
+                    <div>
+                        <p>Vận chuyển Tiết Kiệm (dự kiến giao hàng vào Thứ năm, 02/03/2017 - Thứ sáu, 03/03/2017)</p>
+                        <p>Phí vận chuyển: 17.000&nbsp;₫</p>
+                    </div>
+                </div>
+                <div class="payment-2 has-padding">
+                    <h3>Phương thức thanh toán</h3>
+                    <div>
+                        <p>Thanh toán tiền mặt khi nhận hàng</p>
+                    </div>
 
                 </div>
-                <div class="col-sm-12">
-                    <div class="recent-orders">
-                        <h3>Đơn hàng gần đây</h3>
-                        <table>
-                            <thead>
-                            <tr>
-                                <th class="order-no">Mã đơn hàng</th>
-                                <th class="order-date">Ngày đặt hàng</th>
-                                <th>Sản Phẩm</th>
-                                <th class="order-sum">Tổng tiền</th>
-                                <th class="order-status">Tình trạng</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr class="order-item">
-                                <td class="order-no">
-                                    <a href="order-detail.html">09052017</a>
-                                </td>
-                                <td class="order-date">
-                                    09/05/2017
-                                </td>
-                                <td>SIGNATURE CHAIR</td>
-                                <td class="order-sum">
-                                    4.400.000₫
-                                </td>
-                                <td class="order-status out-stock">
-                                    Chờ xử lý
-                                </td>
-                            </tr>
-                            <tr class="order-item">
-                                <td class="order-no">
-                                    <a href="order-detail.html">03052017</a>
-                                </td>
-                                <td class="order-date">
-                                    03/05/2017
-                                </td>
-                                <td>SIGNATURE CHAIR</td>
-                                <td class="order-sum">
-                                    3.800.000₫
-                                </td>
-                                <td class="order-status in-stock">
-                                    Đã chuyển đi
-                                </td>
-                            </tr>
-                            <tr class="order-item">
-                                <td class="order-no">
-                                    <a href="order-detail.html">23042017</a>
-                                </td>
-                                <td class="order-date">
-                                    23/04/2017
-                                </td>
-                                <td>SIGNATURE CHAIR</td>
-                                <td class="order-sum">
-                                    8.500.000₫
-                                </td>
-                                <td class="order-status order-closed">
-                                    Đã đóng
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <div class="other-1"></div>
             </div>
-            <div class="tab-pane" id="account-info">
-                <h3>Thông tin cá nhân</h3>
-                <form>
-                    <ul>
-                        <li>
-                            <label>Email</label>
-                            <div class="input-field">
-                                <input class="disabled-input" type="email" name="Email" value="hieu.do212@gmail.com"
-                                       disabled/>
-                                <button class="pull-right" data-toggle="modal" data-target=".edit-email">
-                                    <i class="fa fa-edit"></i><span class="hidden-xs"> Chỉnh sửa</span>
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <label>Password</label>
-                            <div class="input-field">
-                                <input class="disabled-input" type="password" name="Password" value="min030515"
-                                       disabled/>
-                                <button class="pull-right" data-toggle="modal" data-target=".edit-password">
-                                    <i class="fa fa-edit"></i><span class="hidden-xs"> Chỉnh sửa</span>
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <label>Họ tên</label>
-                            <div class="input-field">
-                                <input type="text" name="Name" id="name" value="Đỗ Hoàng Hiếu"/>
-                            </div>
-                        </li>
-                        <li>
-                            <label>Điện thoại</label>
-                            <div class="input-field">
-                                <input type="text" name="Phone" id="phone" value="0986090925"/>
-                            </div>
-                        </li>
-                        <li>
-                            <label for="month">Ngày sinh:</label>
-                            <div class="input-field">
-                                <select name="month" id="month">
-                                    <option disabled selected hidden>Tháng</option>
-                                </select>
-                                <select name="date" id="date">
-                                    <option disabled selected hidden>Ngày</option>
-                                </select>
-                                <select name="year" id="year">
-                                    <option disabled selected hidden>Năm</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <label for="gender">Giới tính:</label>
-                            <div class="input-field radio-field">
-                                <input type="radio" class="gender" name="Gender" id="male" value="Nam"/>
-                                <label class="gender" for="male">Nam</label>
-                                <input type="radio" class="gender" name="Gender" id="female" value="Nữ"/>
-                                <label class="gender" for="female">Nữ</label>
-                            </div>
-                        </li>
-                        <li>
-                            <button type="submit" class="save-change"><i class="fa fa-floppy-o"></i> Lưu thông tin
-                            </button>
-                        </li>
-                    </ul>
-                </form>
-            </div>
-            <div class="tab-pane" id="address">
-                <div class="default-address col-xs-12">
-                    <h3>Địa chỉ mặc định</h3>
-                    <div class="row">
-                        <div class="deli-info col-xs-12 col-sm-6">
-                            <h4>Địa chỉ giao hàng</h4>
-                            <p class="add-name">Đỗ Hoàng Hiếu</p>
-                            <p class="add-details">
-                                <span class="add-no">số 40 Giảng Võ</span>
-                                <span class="add-ward">Cát Linh</span>
-                                <span class="add-district">Đống Đa</span>
-                                <span class="add-city">Hà Nội</span>
-                            </p>
-                            <p class="add-phone">0986090925</p>
-                            <a href="#address-edit" data-toggle="tab" class="edit-detail">Chỉnh sửa</a>
-                        </div>
-                        <div class="payment-info col-xs-12 col-sm-6">
-                            <h4>Địa chỉ thanh toán</h4>
-                            <p class="add-name">Đỗ Hoàng Hiếu</p>
-                            <p class="add-details">
-                                <span class="add-no">số 40 Giảng Võ</span>
-                                <span class="add-ward">Cát Linh</span>
-                                <span class="add-district">Đống Đa</span>
-                                <span class="add-city">Hà Nội</span>
-                            </p>
-                            <p class="add-phone">0986090925</p>
-                            <a href="#address-edit" data-toggle="tab" class="edit-detail">Chỉnh sửa</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="address-list">
-                    <h3>Sổ địa chỉ</h3>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="add-item">
-                                <p class="add-name">Đỗ Hoàng Hiếu</p>
-                                <span class="default-mark"><i class="fa fa-check-square-o"></i> Địa chỉ mặc định</span>
-                                <button class="add-remove pull-right">Xóa</button>
-                                <a href="#address-edit" data-toggle="tab" class="edit-detail pull-right">Chỉnh sửa</a>
-                                <p class="add-details">
-                                    <span class="add-no">số 40 Giảng Võ</span>
-                                    <span class="add-ward">Cát Linh</span>
-                                    <span class="add-district">Đống Đa</span>
-                                    <span class="add-city">Hà Nội</span>
-                                </p>
-                                <p class="add-phone">0986090925</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="add-item">
-                                <p class="add-name">Đỗ Hoàng Linh</p>
-                                <button class="add-remove pull-right">Xóa</button>
-                                <a href="#address-edit" data-toggle="tab" class="edit-detail pull-right">Chỉnh sửa</a>
-                                <p class="add-details">
-                                    <span class="add-no">số 40 Giảng Võ</span>
-                                    <span class="add-ward">Cát Linh</span>
-                                    <span class="add-district">Đống Đa</span>
-                                    <span class="add-city">Hà Nội</span>
-                                </p>
-                                <p class="add-phone">0986090925</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="add-item">
-                                <p class="add-name">Trần Minh Hường</p>
-                                <button class="add-remove pull-right">Xóa</button>
-                                <a href="#address-edit" data-toggle="tab" class="edit-detail pull-right">Chỉnh sửa</a>
-                                <p class="add-details">
-                                    <span class="add-no">số 50 Huỳnh Thúc Kháng</span>
-                                    <span class="add-ward">Láng Hạ</span>
-                                    <span class="add-district">Đống Đa</span>
-                                    <span class="add-city">Hà Nội</span>
-                                </p>
-                                <p class="add-phone">0986090925</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="add-item">
-                                <p class="add-name">Trần Minh Hường</p>
-                                <button class="add-remove pull-right">Xóa</button>
-                                <a href="#address-edit" data-toggle="tab" class="edit-detail pull-right">Chỉnh sửa</a>
-                                <p class="add-details">
-                                    <span class="add-no">số 196 Vương Thừa Vũ</span>
-                                    <span class="add-ward">Khương Trung</span>
-                                    <span class="add-district">Thanh Xuân</span>
-                                    <span class="add-city">Hà Nội</span>
-                                </p>
-                                <p class="add-phone">0986090925</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="address-add">
-                                <i class="fa fa-plus-square-o"></i><a href="#address-add" data-toggle="tab"> Thêm địa
-                                chỉ mới</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="history">
-                <div class="recent-orders">
-                    <h3>Lịch sử giao dịch</h3>
-                    <div class="history-filter">
-                        <strong>Lọc kết quả:</strong>
-                        <div class="date-block">
-                            <span>Từ ngày: </span><input type="date" name="start-date">
-                        </div>
-                        <div class="date-block">
-                            <span>Đến ngày: </span><input type="date" name="end-date">
-                        </div>
-                        <select>
-                            <option disabled hidden selected>Theo tình trạng</option>
-                            <option>Chờ xử lý</option>
-                            <option>Đã gửi đi</option>
-                            <option>Đà đóng</option>
-                            <option>Đà hủy</option>
-                        </select>
-                    </div>
-                    <table>
-                        <thead>
-                        <tr>
-                            <th class="order-no">Mã đơn hàng</th>
-                            <th class="order-date">Ngày đặt hàng</th>
-                            <td>Sản phẩm</td>
-                            <th class="order-sum">Tổng tiền</th>
-                            <th class="order-status">Tình trạng</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr class="order-item">
-                            <td class="order-no">
-                                <a href="order-detail.html">09052017</a>
-                            </td>
-                            <td class="order-date">
-                                09/05/2017
-                            </td>
-                            <td>SIGNATURE CHAIR</td>
-                            <td class="order-sum">
-                                4.400.000₫
-                            </td>
-                            <td class="order-status out-stock">
-                                Chờ xử lý
-                            </td>
-                        </tr>
-                        <tr class="order-item">
-                            <td class="order-no">
-                                <a href="order-detail.html">03052017</a>
-                            </td>
-                            <td class="order-date">
-                                03/05/2017
-                            </td>
-                            <td>SIGNATURE CHAIR</td>
-                            <td class="order-sum">
-                                3.800.000₫
-                            </td>
-                            <td class="order-status in-stock">
-                                Đã chuyển đi
-                            </td>
-                        </tr>
-                        <tr class="order-item">
-                            <td class="order-no">
-                                <a href="order-detail.html">23042017</a>
-                            </td>
-                            <td class="order-date">
-                                23/04/2017
-                            </td>
-                            <td>SIGNATURE CHAIR</td>
-                            <td class="order-sum">
-                                8.500.000₫
-                            </td>
-                            <td class="order-status order-closed">
-                                Đã đóng
-                            </td>
-                        </tr>
-                        <tr class="order-item">
-                            <td class="order-no">
-                                <a href="order-detail.html">01042017</a>
-                            </td>
-                            <td class="order-date">
-                                01/04/2017
-                            </td>
-                            <td>SIGNATURE CHAIR</td>
-                            <td class="order-sum">
-                                10.900.000₫
-                            </td>
-                            <td class="order-status order-closed">
-                                Đã đóng
-                            </td>
-                        </tr>
-                        <tr class="order-item">
-                            <td class="order-no">
-                                <a href="order-detail.html">02032017</a>
-                            </td>
-                            <td class="order-date">
-                                02/03/2017
-                            </td>
-                            <td>SIGNATURE CHAIR</td>
-                            <td class="order-sum">
-                                9.400.000₫
-                            </td>
-                            <td class="order-status order-canceled">
-                                Đã hủy
-                            </td>
-                        </tr>
-                        <tr class="order-item">
-                            <td class="order-no">
-                                <a href="order-detail.html">14022017</a>
-                            </td>
-                            <td class="order-date">
-                                14/02/2017
-                            </td>
-                            <td>SIGNATURE CHAIR</td>
-                            <td class="order-sum">
-                                14.200.000₫
-                            </td>
-                            <td class="order-status order-closed">
-                                Đã đóng
-                            </td>
-                        </tr>
-                        <tr class="order-item">
-                            <td class="order-no">
-                                <a href="order-detail.html">01012017</a>
-                            </td>
-                            <td class="order-date">
-                                01/01/2017
-                            </td>
-                            <td>SIGNATURE CHAIR</td>
-                            <td class="order-sum">
-                                11.000.000₫
-                            </td>
-                            <td class="order-status order-closed">
-                                Đã đóng
-                            </td>
-                        </tr>
-                        <tr class="order-item">
-                            <td class="order-no">
-                                <a href="order-detail.html">02122016</a>
-                            </td>
-                            <td class="order-date">
-                                02/12/2016
-                            </td>
-                            <td>SIGNATURE CHAIR</td>
-                            <td class="order-sum">
-                                12.200.000₫
-                            </td>
-                            <td class="order-status order-closed">
-                                Đã đóng
-                            </td>
-                        </tr>
-                        <tr class="order-item">
-                            <td class="order-no">
-                                <a href="order-detail.html">11112016</a>
-                            </td>
-                            <td class="order-date">
-                                11/11/2016
-                            </td>
-                            <td>SIGNATURE CHAIR</td>
-                            <td class="order-sum">
-                                11.100.000₫
-                            </td>
-                            <td class="order-status order-canceled">
-                                Đã hủy
-                            </td>
-                        </tr>
-                        <tr class="order-item">
-                            <td class="order-no">
-                                <a href="order-detail.html">29092016</a>
-                            </td>
-                            <td class="order-date">
-                                29/09/2016
-                            </td>
-                            <td>SIGNATURE CHAIR</td>
-                            <td class="order-sum">
-                                9.900.000₫
-                            </td>
-                            <td class="order-status order-closed">
-                                Đã đóng
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <nav>
-                        <div class="pagination">
-                            <a class="prev page-no" href="#">
-                                <i class="fa fa-long-arrow-left"></i>
-                            </a>
-                            <a href="#" class="page-no current">1</a>
-                            <a href="#" class="page-no">2</a>
-                            <a href="#" class="page-no">3</a>
-                            <a href="#" class="page-no">4</a>
-                            <a href="#" class="page-no">5</a>
-                            <a class="next page-no" href="#">
-                                <i class="fa fa-long-arrow-right"></i>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <div class="tab-pane address-change" id="address-edit">
-                <h3>Sửa địa chỉ</h3>
-                <form>
-                    <ul>
-                        <li>
-                            <label>Họ tên</label>
-                            <div class="input-field">
-                                <input type="text" name="Name" value="Đỗ Hoàng Hiếu"/>
-                            </div>
-                        </li>
-                        <li>
-                            <label>Điện thoại</label>
-                            <div class="input-field">
-                                <input type="text" name="Phone" value="0986090925"/>
-                            </div>
-                        </li>
-                        <li>
-                            <label>Địa chỉ</label>
-                            <div class="input-field">
-                                <select>
-                                    <option disabled hidden>Tỉnh / Thành phố</option>
-                                    <option selected>Hà Nội</option>
-                                    <option>Hồ Chí Minh</option>
-                                    <option>Đà Nẵng</option>
-                                </select>
-                                <select>
-                                    <option disabled selected hidden>Quận / Huyện</option>
-                                    <option>Quận Ba Đình</option>
-                                    <option selected>Quận Đống Đa</option>
-                                    <option>Quận Hai Bà Trưng</option>
-                                </select>
-                                <select>
-                                    <option disabled selected hidden>Phường / Xã</option>
-                                    <option selected>Phường Cát Linh</option>
-                                    <option>Phường Kim Liên</option>
-                                    <option>Phường Ô Chợ Dừa</option>
-                                </select>
-                                <input type="text" name="Address" value="Số 40 Giảng Võ"/>
-                                <div class="check-field">
-                                    <input type="checkbox" id="default-deli" name="default-deli" checked/><label
-                                        for="default-deli">Đặt làm địa chỉ giao hàng mặc định</label>
-                                </div>
-                                <div class="check-field">
-                                    <input type="checkbox" id="default-pay" name="default-pay" checked/><label
-                                        for="default-pay">Đặt làm địa chỉ thanh toán mặc định</label>
+            <div class="cart-container wishlist-container">
+                <table class="cart">
+                    <thead>
+                    <tr>
+                        <th class="product-thumbnail">Sản phẩm</th>
+                        <th class="product-price"><span class="hidden-xs">Giá</span></th>
+                        <th class="product-status"><span class="hidden-xs">Số lượng</span></th>
+                        <th class="product-action">Giảm giá</th>
+                        <th class="product-remove">Tạm tính</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="cart-item">
+                        <td class="product-thumbnail">
+                            <img src="img/riflesso_1.jpg">
+                            <div class="product-name">
+                                <a  class="name-detail" href="shop-detail.html">Tủ Riflesso</a>
+                                <p class="ncc">by <a href="#">N</a></p>
+                                <div class="clear-fix">
+                                    <a href="#" class="btn">Viết nhận xét</a>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <button type="submit" class="save-change"><i class="fa fa-floppy-o"></i> Lưu</button>
-                            <a href="#address" data-toggle="tab" class="cancel">Bỏ qua</a>
-                        </li>
-                    </ul>
-                </form>
-            </div>
-            <div class="tab-pane address-change" id="address-add">
-                <h3>Thêm địa chỉ</h3>
-                <form>
-                    <ul>
-                        <li>
-                            <label>Họ tên</label>
-                            <div class="input-field">
-                                <input type="text" name="Name" placeholder="Nhập họ tên"/>
-                            </div>
-                        </li>
-                        <li>
-                            <label>Điện thoại</label>
-                            <div class="input-field">
-                                <input type="text" name="Phone" placeholder="Nhập số điện thoại"/>
-                            </div>
-                        </li>
-                        <li>
-                            <label>Địa chỉ</label>
-                            <div class="input-field">
-                                <select>
-                                    <option disabled selected hidden>Tỉnh / Thành phố</option>
-                                    <option>Hà Nội</option>
-                                    <option>Hồ Chí Minh</option>
-                                    <option>Đà Nẵng</option>
-                                </select>
-                                <select>
-                                    <option disabled selected hidden>Quận / Huyện</option>
-                                    <option>Quận Ba Đình</option>
-                                    <option>Quận Đống Đa</option>
-                                    <option>Quận Hai Bà Trưng</option>
-                                </select>
-                                <select>
-                                    <option disabled selected hidden>Phường / Xã</option>
-                                    <option>Phường Cát Linh</option>
-                                    <option>Phường Kim Liên</option>
-                                    <option>Phường Ô Chợ Dừa</option>
-                                </select>
-                                <input type="text" name="Address"
-                                       placeholder="Nhập địa chỉ chính xác (tầng, số nhà, đường,...)"/>
-                                <div class="check-field">
-                                    <input type="checkbox" id="default-deli" name="default-deli"/><label
-                                        for="default-deli">Đặt làm địa chỉ giao hàng mặc định</label>
-                                </div>
-                                <div class="check-field">
-                                    <input type="checkbox" id="default-pay" name="default-pay"/><label
-                                        for="default-pay">Đặt làm địa chỉ thanh toán mặc định</label>
+                        </td>
+                        <td class="product-price">
+                            4400000
+                        </td>
+                        <td class="product-status">
+                            <span class="in-stock">1</span>
+                        </td>
+                        <td class="product-action">
+                           0
+                        </td>
+                        <td class="product-remove">
+                            4400000
+                        </td>
+                    </tr>
+                    <tr class="cart-item">
+                        <td class="product-thumbnail">
+                                <img src="img/rotonda_1.jpg" alt="">
+                            <div class="product-name">
+                                <a href="shop-detail.html">Bàn La Rotonda </a>
+                                <p class="ncc">by <a href="#">D</a></p>
+                                <div class="clear-fix">
+                                    <a href="#" class="btn">Viết nhận xét</a>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <button type="submit" class="save-change"><i class="fa fa-floppy-o"></i> Lưu</button>
-                            <a href="#address" data-toggle="tab" class="cancel">Bỏ qua</a>
-                        </li>
-                    </ul>
-                </form>
+                        </td>
+                        <td class="product-price">
+                            3200000
+                        </td>
+                        <td class="product-status">
+                           1
+                        </td>
+                        <td class="product-action">
+                           0
+                        </td>
+                        <td class="product-remove">
+                            3200000
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 </div>
 <a href="#"><i class="fa fa-angle-up back-top"></i></a>
-
 <footer>
     <div class="container">
         <div class="row footer-top">
@@ -770,9 +319,9 @@
         </div>
         <div class="row footer-bot">
             <a href="#" title="Kết nối qua Facebook"><i class="fa fa-facebook-official"></i></a>
-            <a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i>
-                <a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i>
-                    <a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i>
+            <a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i></a>
+            <a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i></a>
+            <a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i></a>
         </div>
     </div>
     <div class="container-fluid copyright">
@@ -797,7 +346,8 @@
 <script type="text/javascript">
 
     $(window).bind('scroll', function () {
-        if ($(window).scrollTop() > 460) {
+        if ($(window).scrollTop() > 151) {
+            console.log(123);
             $('header').addClass('fixed')
             $('button#menu-scroll.navbar-toggle').css('display', 'block')
             $('header').css('height', '71px')
@@ -846,11 +396,11 @@
         }
          /*******************/
         $(window).bind('scroll', function () {
-            if (click === 'onclicked' && $(window).scrollTop() < 460) {
-                console.log(3);
+            if (click === 'onclicked' && $(window).scrollTop() < 152) {
+//                console.log(3);
                 $('header .navbar').css('display', 'flex');
-            } else if (click === 'onclicked' && $(window).scrollTop() > 460) {
-                console.log(4);
+            } else if (click === 'onclicked' && $(window).scrollTop() > 151) {
+//                console.log(4);
                 $('header .navbar').css('display', 'none');
             }
         })

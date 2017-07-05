@@ -49,7 +49,7 @@
                                 <li><a href="user-account.html">Tài khoản của tôi</a></li>
                                 <li><a href="order.html">Đơn hàng của tôi</a></li>
                                 <li><a href="wishlist.html">Danh sách Yêu thích</a></li>
-                                <li><a id="logout-btn" href="#">Đăng xuất</a></li>
+                                <li><a href="home.html">Đăng xuất</a></li>
                             </ul>
                         </div>
                     </div>
@@ -801,12 +801,10 @@
         if (click === 'onclicked') {
             $('header').css('height', '151px');
             $('header .navbar').css('display', 'flex');
-            console.log(click);
             click = 'clicked again'
         } else if (click === 'clicked again') {
             $('header').css('height', '71px');
             $('header .navbar').css('display', 'none');
-            console.log(click);
             click = 'onclicked';
         }
         /*******************/
@@ -833,10 +831,8 @@
          /*******************/
         $(window).bind('scroll', function () {
             if (click === 'onclicked' && $(window).scrollTop() < 460) {
-                console.log(3);
                 $('header .navbar').css('display', 'flex');
             } else if (click === 'onclicked' && $(window).scrollTop() > 460) {
-                console.log(4);
                 $('header .navbar').css('display', 'none');
             }
         })

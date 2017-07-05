@@ -46,8 +46,10 @@
                                 Đỗ Hoàng Hiếu
                             </button>
                             <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="user-account.html">Quản lý tài khoản</a></li>
-                                <li><a id="logout-btn" href="#">Đăng xuất</a></li>
+                                <li><a href="user-account.html">Tài khoản của tôi</a></li>
+                                <li><a href="order.html">Đơn hàng của tôi</a></li>
+                                <li><a href="wishlist.html">Danh sách Yêu thích</a></li>
+                                <li><a href="home.html">Đăng xuất</a></li>
                             </ul>
                         </div>
                     </div>
@@ -167,65 +169,78 @@
         </ol>
     </div>
 </div>
-<div class="container">
+<div style="height:80px"></div>
+<div class="container account-main">
     <div class="row">
-        <div class="col-sm-12">
+        <nav class="side-nav">
+            <div class="user-top-wrap">
+                <div class="user-top">
+                    <img src="img/feedback_1.jpg">
+                    <span>Đỗ Hoàng Hiếu</span>
+                </div>
+            </div>
+            <ul class="nav nav-stacked">
+                <li><a href="user-account.html">Tài khoản của tôi</a></li>
+                <li><a href="order.html">Quản lý đơn hàng</a></li>
+                <li class="active"><a href="wishlist.html">Danh sách yêu thích</a></li>
+            </ul>
+        </nav>
+        <div class="tab-content">
+            <h3>Danh sách yêu thích (2)</h3>
             <div class="cart-container wishlist-container">
                 <table class="cart">
                     <thead>
                     <tr>
-                        <th class="product-thumbnail">Sản phẩm</th>
-                        <th class="product-name"><span class="hidden-xs">Tên sản phẩm</span></th>
-                        <th class="product-price"><span class="hidden-xs">Đơn giá</th>
-                        <th class="product-status"><span class="hidden-xs">Tình trạng</th>
-                        <th class="product-action">&nbsp;</th>
-                        <th class="product-remove">&nbsp;</th>
+                        <th class="product-thumbnail-wishlist">Sản phẩm</th>
+                        <th class="product-name-wishlist"><span class="hidden-xs">Tên sản phẩm</span></th>
+                        <th class="product-price-wishlist"><span class="hidden-xs">Đơn giá</th>
+                        <th class="product-status-wishlist"><span class="hidden-xs">Tình trạng</th>
+                        <th class="product-action-wishlist">&nbsp;</th>
+                        <th class="product-remove-wishlist">&nbsp;</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr class="cart-item">
-                        <td class="product-thumbnail">
+                        <td class="product-thumbnail-wishlist">
                             <a href="shop-detail.html">
                                 <img src="img/riflesso_1.jpg">
                             </a>
                         </td>
-                        <td class="product-name">
+                        <td class="product-name-wishlist">
                             <a href="shop-detail.html">Tủ Riflesso</a>
                         </td>
-                        <td class="product-price">
+                        <td class="product-price-wishlist">
                             4400000
                         </td>
-                        <td class="product-status">
+                        <td class="product-status-wishlist">
                             <span class="in-stock">Còn hàng</span>
                         </td>
-                        <td class="product-action">
-                            <button class="link-to"><span class="hidden-xs hidden-sm">Thêm vào giỏ hàng </span><i
-                                    class="fa fa-shopping-cart"></i></button>
+                        <td class="product-action-wishlist">
+                            <button class="link-to"><span class="hidden-xs hidden-sm">Thêm vào giỏ hàng </span></button>
                         </td>
-                        <td class="product-remove">
+                        <td class="product-remove-wishlist">
                             <button><i class="fa fa-trash-o"></i></button>
                         </td>
                     </tr>
                     <tr class="cart-item">
-                        <td class="product-thumbnail">
+                        <td class="product-thumbnail-wishlist">
                             <a href="shop-detail.html">
                                 <img src="img/rotonda_1.jpg" alt="">
                             </a>
                         </td>
-                        <td class="product-name">
+                        <td class="product-name-wishlist">
                             <a href="shop-detail.html">Bàn La Rotonda </a>
                         </td>
-                        <td class="product-price">
+                        <td class="product-price-wishlist">
                             3200000
                         </td>
-                        <td class="product-status">
+                        <td class="product-status-wishlist">
                             <span class="out-stock">Hết hàng</span>
                         </td>
-                        <td class="product-action">
-                            <button class="link-to"><span class="hidden-xs hidden-sm">Thêm vào giỏ hàng </span><i
-                                    class="fa fa-shopping-cart"></i></button>
+                        <td class="product-action-wishlist">
+                            <button class="link-to"><span class="hidden-xs hidden-sm">Thêm vào giỏ hàng </span></button>
                         </td>
-                        <td class="product-remove">
+                        <td class="product-remove-wishlist">
                             <button><i class="fa fa-trash-o"></i></button>
                         </td>
                     </tr>
@@ -276,9 +291,9 @@
         </div>
         <div class="row footer-bot">
             <a href="#" title="Kết nối qua Facebook"><i class="fa fa-facebook-official"></i></a>
-            <a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i>
-                <a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i>
-                    <a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i>
+            <a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i></a>
+            <a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i></a>
+            <a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i></a>
         </div>
     </div>
     <div class="container-fluid copyright">
@@ -295,57 +310,71 @@
     var sum = 0;
     $(".buy").click(function () {
         $(this).each(function () {
-            sum += 1;
-        });
-        $('.total').text(sum);
-    });
+            sum += 1
+        })
+        $('.total').text(sum)
+    })
 </script>
-
 <script type="text/javascript">
+
     $(window).bind('scroll', function () {
         if ($(window).scrollTop() > 460) {
-            $('header').addClass('fixed');
-            $('button#menu-scroll.navbar-toggle').css('display', 'block');
-            $('header').css('height', '71px');
+            $('header').addClass('fixed')
+            $('button#menu-scroll.navbar-toggle').css('display', 'block')
+            $('header').css('height', '71px')
         } else {
-            $('header').removeClass('fixed');
-            $('button#menu-scroll.navbar-toggle').css('display', 'none');
-            $('header').css('height', '151px');
+            $('header').removeClass('fixed')
+            $('button#menu-scroll.navbar-toggle').css('display', 'none')
+            $('header').css('height', '151px')
         }
-
     });
     var click = 'onclicked'
-    //    var temp = 1
+    var temp = 1
     $(".form-search button").click(function () {
+        /********************
+         * Using if*/
         if (click === 'onclicked') {
             $('header').css('height', '151px');
             $('header .navbar').css('display', 'flex');
+            console.log(click);
             click = 'clicked again'
         } else if (click === 'clicked again') {
             $('header').css('height', '71px');
             $('header .navbar').css('display', 'none');
+            console.log(click);
             click = 'onclicked';
         }
+        /*******************/
+
         /*******************
          * Using switch ... case
          switch (temp) {
             case (1): {
-                $('header').css('height', '151px');
-                $('header .navbar').css('display', 'flex');
-                console.log(temp);
+                $('header').css('height', '151px')
+                $('header .navbar').css('display', 'flex')
+                console.log(temp)
                 temp++
             }
                 break
             case(2): {
-                $('header').css('height', '71px');
-                $('header .navbar').css('display', 'none');
-                console.log(temp);
+                $('header').css('height', '71px')
+                $('header .navbar').css('display', 'none')
+                console.log(temp)
                 temp--
             }
                 break
             default:
         }
-         *******************/
+         /*******************/
+        $(window).bind('scroll', function () {
+            if (click === 'onclicked' && $(window).scrollTop() < 460) {
+                console.log(3);
+                $('header .navbar').css('display', 'flex');
+            } else if (click === 'onclicked' && $(window).scrollTop() > 460) {
+                console.log(4);
+                $('header .navbar').css('display', 'none');
+            }
+        })
     });
 </script>
 </body>
