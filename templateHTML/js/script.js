@@ -183,10 +183,10 @@ $(document).ready(function(){
             'slow');
         return false;
     });
-    $(".back-top").click(function() {
+    $('.back-top').on('click', function () {
         $('html,body').animate({
-            scrollTop: $("header").offset().top},
-            'slow');
+            scrollTop: 0
+        }, 1000);
         return false;
     });
 });

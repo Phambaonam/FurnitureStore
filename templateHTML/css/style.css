@@ -34,7 +34,20 @@ p.ncc {
 p.ncc a {
     color: green;
 }
-
+.header-account-order-detail {
+    width: 955px;
+    height: 60px;
+    background-color: #33669A;
+    margin: 0 auto;
+}
+.header-account-order-detail h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+}
+.account-detail-info {
+    background:#fff;
+}
 .product-name {
     /*border: 1px solid red;*/
     display: inline-block;
@@ -65,7 +78,10 @@ p.ncc a {
     font-size: 20px;
     color: #242424;
 }
-
+div.cart-container.wishlist-container {
+    /*border: 1px solid;*/
+    /*margin-top: 20%;*/
+}
 /*header.fixed .header-form-container {*/
 /*position: fixed;*/
 /*background: #F8F8F8;*/
@@ -2255,10 +2271,22 @@ span.fontSize-rating:hover {
     }
 }
 
+.btn-back {
+    background: #4CAF50;
+    border-color: #4CAF50;
+    color: #fff;
+    margin-top: 20px;
+    padding: 9px 12px;
+    width: 225px;
+}
+ a.order-back:hover {
+    background:#4CAF50;
+    border-color: #4CAF50;
+}
 .account-order-detail {
     /*overflow: hidden;*/
     font-size: 0;
-    height: 370px;
+    height: 145px;
 }
 
 .account-order-detail .note {
@@ -2292,52 +2320,56 @@ span.fontSize-rating:hover {
 .account-order-detail .note div.ct div.ct-left {
     float: left;
     width: 17%;
+    font-size:15px;
 }
 
 .account-order-detail .note div.ct div.ct-right {
     float: right;
     width: 83%;
+    font-size:15px;
 }
 
-.account-order-detail .address-1 {
-    width: 32.6%;
+ .address-1 {
+    width: 33.3%;
     display: block;
     vertical-align: top;
-    margin-top: 20px;
-    float: left;
-    margin-right: 1%;
-}
-
-.account-order-detail .address-1 p.name {
-    font-weight: 500;
-    color: #242424;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.account-order-detail .payment-1 {
-    width: 32.6%;
-    display: block;
-    vertical-align: top;
-    margin-top: 20px;
-    float: left;
-    margin-right: 1%;
-}
-
-.account-order-detail .payment-2 {
-    margin-right: 0;
-}
-
-.account-order-detail .payment-2 {
-    width: 32.6%;
-    display: block;
-    vertical-align: top;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     float: left;
     /*margin-right: 1%;*/
+    /*background: #336699;*/
 }
 
-.account-order-detail .payment-2 h3, .account-order-detail .payment-1 h3, .account-order-detail .address-1 h3 {
+ /*.address-1 p.name {*/
+    /*font-weight: 500;*/
+    /*color: #242424;*/
+    /*text-transform: uppercase;*/
+    /*margin-bottom: 10px;*/
+/*}*/
+
+.payment-1 {
+    width: 33.3%;
+    display: block;
+    vertical-align: top;
+    /*margin-top: 20px;*/
+    float: left;
+    /*margin-right: 1%;*/
+    /*background: #336699;*/
+}
+
+.payment-2 {
+    margin-right: 0;
+    width: 33%;
+    display: block;
+    vertical-align: top;
+    /*margin-top: 20px;*/
+    float: left;
+    /*margin-right: 1%;*/
+    /*background: #336699;*/
+}
+.address-1 p, .payment-1 p, .payment-2 p {
+    text-align: center;
+}
+.payment-2 h3, .payment-1 h3, .address-1 h3 {
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 15px;
@@ -2347,7 +2379,7 @@ span.fontSize-rating:hover {
     color: #242424;
 }
 
-.account-order-detail .payment-2 div, .account-order-detail .payment-1 div, .account-order-detail .address-1 div {
+.payment-2 div,  .payment-1 div,  .address-1 div {
     padding: 5px 10px;
     background: #fff;
     border-radius: 4px;
@@ -2356,11 +2388,7 @@ span.fontSize-rating:hover {
     line-height: 1.38;
 }
 
-.account-order-detail .other-1 {
-    width: 100%;
-    margin-bottom: 20px;
-    margin-right: 0;
-}
+
 
 .cart-container {
     background: #ffffff;
@@ -2510,8 +2538,16 @@ span.fontSize-rating:hover {
     width: 22%;
 }
 .cart-container table.cart .product-remove-wishlist {
-    width: 4%;
+    width: 10%;
     text-align: center;
+}
+td.product-price-wishlist::after{
+    content: '₫';
+}
+.cart-container table.cart .product-remove-wishlist button {
+    background: none;
+    border: 0;
+    outline: none;
 }
 .cart-container table.cart .product-thumbnail-wishlist a img {
     margin-top: 0px;
@@ -4470,9 +4506,8 @@ h3.comment-reply-title {
     padding-left: 10px;
     margin: 20px 0 30px;
     line-height: 0.8;
-    /*border-left: solid 3px #336699;*/
     text-transform: uppercase;
-    /*font-weight: 600;*/
+    text-align: center;
 }
 
 .account-main .tab-content p {
