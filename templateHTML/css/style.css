@@ -1803,10 +1803,23 @@ a.blog-link:hover::before, .blog-link a:hover::before {
 .product-list {
     /*position: relative;*/
 }
+/* ***********css star tú viết ******* */
+.star ,#numberStar {
+    font-size: 20px;
+    color:#8e8877;
+}
 
-.rating {
+.rating{
+    text-align: center;
+}
+/* ***********end css star tú viết ******* */
+
+/*
+star cũ
+.rating{
     font-size: 23px;
 }
+*/
 
 .rating-detail {
     font-size: 30px;
@@ -4940,3 +4953,4 @@ button.save-change:hover {
     z-index: 100;
     display: none;
 }
+/* ************hover star****************** */

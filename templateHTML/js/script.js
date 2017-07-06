@@ -183,12 +183,33 @@ $(document).ready(function(){
             'slow');
         return false;
     });
-    $(".back-top").click(function() {
-        $('html,body').animate({
-            scrollTop: $("header").offset().top},
-            'slow');
-        return false;
+    
+    $('.back-top').on('click', function () {
+		$('html,body').animate({
+			scrollTop: 0
+		}, 1000);
+		return false;
+	});
+    // star tú viêt
+     $(".star").click(function() {
+       $(this).css("color","yellow");
+       $(this).prevAll().css("color","yellow");
+        $(this).nextAll().css("color","#8e8877");
+      $("#number_rating").css("color","#8e8877");
+       $("#number_rating").text($(this).attr("data-rating"));
     });
+
+    $(".star").hover(function() {
+            $(this).css("color","yellow");
+            $(this).prevAll().css("color","yellow");
+            $(this).nextAll().css("color","#8e8877");
+
+        }, function() {
+            $(".star[data-rating=" + $("#number_rating").html() + "]").click();
+        }
+    );// end star tú viết
+
+    
 });
 
 $('td.product-price').each(function () {   
