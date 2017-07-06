@@ -504,9 +504,16 @@
                                     <strong>$99.21</strong>
                                    </span>
                                 </p>
-                                <p class="rating">
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>(5)</span>
-                                </p>
+                                
+                                <div class="rating">
+                                    <span id="star1" class="star fa fa-star" data-rating="1"></span>
+                                    <span id="star2" class="star fa fa-star" data-rating="2"></span>
+                                    <span id="star3" class="star fa fa-star" data-rating="3"></span>
+                                    <span id="star4" class="star fa fa-star" data-rating="4"></span>
+                                    <span id="star5" class="star fa fa-star" data-rating="5"></span>
+                                    <span id="numberStar">&#40<span id="number_rating">1</span>&#41</span>
+                                </div>
+                                   
                             </div>
                         </div>
                     </div>
@@ -536,7 +543,13 @@
                                    </span>
                                 </p>
                                 <p class="rating">
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>(5)</span>
+                                    <span id="number_rating"></span>
+                                    <span class="sao">☆</span>
+                                    <span class="sao">☆</span>
+                                    <span class="sao">☆</span>
+                                    <span class="sao">☆</span>
+                                    <span class="sao">☆</span>
+                                    
                                 </p>
                             </div>
                         </div>
@@ -781,7 +794,7 @@
     })
 </script>
 <script type="text/javascript">
-
+    
     $(window).bind('scroll', function () {
         if ($(window).scrollTop() > 460) {
             $('header').addClass('fixed')
