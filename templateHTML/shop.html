@@ -794,15 +794,7 @@
     })
 </script>
 <script type="text/javascript">
-    $(document).ready(function(){
-        $(".sao").click(function () {
-            $(".sao").css("color", "black");
-
-            $(".sao").nextAll().css("color", "yellow");
-            $("#number_rating").css("color", "yellow");
-            $("#number_rating").text($(this).attr("data-rating"));
-        });
-    })
+    
     $(window).bind('scroll', function () {
         if ($(window).scrollTop() > 460) {
             $('header').addClass('fixed')
