@@ -1,6 +1,7 @@
 var sum = 0, total, discount, discountRate=0;
 var $navMenuCont;
 $(document).ready(function(){
+     
     // $('.box').css({'transform':'translateX(0)','opacity':1});
     // $('.box-title').css({'transform':'translateX(0)','opacity':1});
     $(window).scroll(function(){
@@ -208,8 +209,12 @@ $(document).ready(function(){
             $(".star[data-rating=" + $("#number_rating").html() + "]").click();
         }
     );// end star tú viết
-
     
+    // reload page
+    $(window).on('beforeunload', function() {
+        $(window).scrollTop(0);
+    });
+    // end reload page
 });
 
 $('td.product-price').each(function () {   
