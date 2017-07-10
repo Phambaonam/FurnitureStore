@@ -2321,9 +2321,10 @@ span.fontSize-rating:hover {
 .account-order-detail .note div.ct {
     padding: 10px;
     background: #fff;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
     overflow: hidden;
     line-height: 1.38;
+    border: 1px solid #E7E7E7;
 }
 
 .account-order-detail .note div.ct div.ct-row {
