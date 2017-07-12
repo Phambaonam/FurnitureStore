@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">-->
 </head>
 <body>
 <header>
@@ -167,7 +168,7 @@
         <p>Mỗi món đồ là một câu chuyện nhỏ. MIN cùng bạn viết nên câu chuyện ngôi nhà mình.</p>
         <ol class="breadcrumb">
             <li><a href="home.html">Trang chủ</a></li>
-            <li class="active">Even</li>
+            <li class="active">Event</li>
         </ol>
     </div>
 </div>
@@ -176,7 +177,7 @@
     <div class="row">
         <div id="introduction">
             <h2>Sự kiện sẽ sớm kết thúc, hãy sử dụng mã giảm giá cho đơn hàng của bạn, nhanh tay đi nào!</h2>
-            <span>Cập nhật ngày 13/12/2017</span>
+            <i>Cập nhật ngày 13/12/2017</i>
         </div>
     </div>
     <div style="width: auto; height:50px;"></div>
@@ -205,115 +206,45 @@
                     </p>
                 </div>
                 <div class="sale-off-right">
-                    <div class="sale-off-right-button"
-                         onclick="var person = prompt('Nhập mã coupon bên dưới để được giảm giá.','KMWTF')">
+                    <div class="sale-off-right-button" data-toggle="modal" data-target="#myModal">
                         <div class="sale-off-right-code-cover">
-                            <span class="sale-off-right-icon-scissors"></span>LẤY MÃ
+                            <span class="sale-off-right-icon-scissors">LẤY MÃ</span>
                         </div>
-                        <div class="sale-off-right-code-text">Xem chi tiết</div>
-                    </div>
-                </div>
-            </div>
-            <div class="code-sale-off">
-                <div class="sale-off-left">
-                    <div class="sale-off-left-box">
-                        <span class="sale-off-left-text">Giảm</span>
-                        <span class="sale-off-left-bigText">20%</span>
-                    </div>
-                </div>
-                <div class="sale-off-middle">
-                    <h6 class="sale-off-middle-title">Min KHUYẾN HỌC - Bàn học không lợi nhuận</h6>
-                    <p class="sale-off-middle-expires">
-                        <span class="sale-off-middle-mggicon"></span>
-                        <strong>Hạn dùng:</strong> 31-7-2017
-                    </p>
-                    <p class="sale-off-middle-cat">
-                        <span class="sale-off-middle-mggicon"></span>
-                        <strong>Danh mục:</strong> Bàn học
-                    </p>
-                    <p class="sale-off-middle-note">
-                        <span class="sale-off-middle-mggicon"></span>
-                        <strong>Lưu ý: </strong>Mua bàn học rẻ hơn bao giờ hết
-                    </p>
-                </div>
-                <div class="sale-off-right">
-                    <div class="sale-off-right-button"
-                         onclick="var person = prompt('Nhập mã coupon bên dưới để được giảm giá.','KMWTF')">
-                        <div class="sale-off-right-code-cover">
-                            <span class="sale-off-right-icon-scissors"></span>LẤY MÃ
-                        </div>
-                        <div class="sale-off-right-code-text">Xem chi tiết</div>
-                    </div>
-                </div>
-            </div>
-            <div class="code-sale-off">
-                <div class="sale-off-left">
-                    <div class="sale-off-left-box">
-                        <span class="sale-off-left-text">Giảm</span>
-                        <span class="sale-off-left-bigText">20%</span>
-                    </div>
-                </div>
-                <div class="sale-off-middle">
-                    <h6 class="sale-off-middle-title">Min KHUYẾN HỌC - Bàn học không lợi nhuận</h6>
-                    <p class="sale-off-middle-expires">
-                        <span class="sale-off-middle-mggicon"></span>
-                        <strong>Hạn dùng:</strong> 31-7-2017
-                    </p>
-                    <p class="sale-off-middle-cat">
-                        <span class="sale-off-middle-mggicon"></span>
-                        <strong>Danh mục:</strong> Bàn học
-                    </p>
-                    <p class="sale-off-middle-note">
-                        <span class="sale-off-middle-mggicon"></span>
-                        <strong>Lưu ý: </strong>Mua bàn học rẻ hơn bao giờ hết
-                    </p>
-                </div>
-                <div class="sale-off-right">
-                    <div class="sale-off-right-button"
-                         onclick="var person = prompt('Nhập mã coupon bên dưới để được giảm giá.','KMWTF')">
-                        <div class="sale-off-right-code-cover">
-                            <span class="sale-off-right-icon-scissors"></span>LẤY MÃ
-                        </div>
-                        <div class="sale-off-right-code-text">Xem chi tiết</div>
-                    </div>
-                </div>
-            </div>
-            <div class="code-sale-off">
-                <div class="sale-off-left">
-                    <div class="sale-off-left-box">
-                        <span class="sale-off-left-text">Giảm</span>
-                        <span class="sale-off-left-bigText">20%</span>
-                    </div>
-                </div>
-                <div class="sale-off-middle">
-                    <h6 class="sale-off-middle-title">Min KHUYẾN HỌC - Bàn học không lợi nhuận</h6>
-                    <p class="sale-off-middle-expires">
-                        <span class="sale-off-middle-mggicon"></span>
-                        <strong>Hạn dùng:</strong> 31-7-2017
-                    </p>
-                    <p class="sale-off-middle-cat">
-                        <span class="sale-off-middle-mggicon"></span>
-                        <strong>Danh mục:</strong> Bàn học
-                    </p>
-                    <p class="sale-off-middle-note">
-                        <span class="sale-off-middle-mggicon"></span>
-                        <strong>Lưu ý: </strong>Mua bàn học rẻ hơn bao giờ hết
-                    </p>
-                </div>
-                <div class="sale-off-right">
-                    <div class="sale-off-right-button"
-                         onclick="var person = prompt('Nhập mã coupon bên dưới để được giảm giá.','KMWTF')">
-                        <div class="sale-off-right-code-cover">
-                            <span class="sale-off-right-icon-scissors"></span>LẤY MÃ
-                        </div>
-                        <div class="sale-off-right-code-text">Xem chi tiết</div>
+                        <div class="sale-off-right-code-text">KMWTF</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <a href="#"><i class="fa fa-angle-up back-top"></i></a>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div id="copy-code">
+        <span class=" tick glyphicon glyphicon-ok"></span>
+        Copy thành công!
+    </div>
+    <div class="code-sale-box modal-dialog">
+        <!-- Modal content-->
+        <div class="code-sale-modal modal-content">
+            <div class="code-sale-modal-title">
+                <h4>Mã giảm giá!</h4>
+            </div>
+            <div class="code-sale-modal-content">
+                <div style="margin-left:26.33%;">
+                    <span class="code">KMWTF</span>
+                    <button class="btn" onclick="copy()">Copy</button>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Xong</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 <footer>
     <div class="container">
         <div class="row footer-top">
@@ -434,6 +365,11 @@
             }
         })
     });
+</script>
+<script>
+    function copy() {
+        $('#copy-code').css('display','block')
+    }
 </script>
 </body>
 </html>
