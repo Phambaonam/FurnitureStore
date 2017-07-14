@@ -1984,7 +1984,7 @@ a.blog-link:hover::before, .blog-link a:hover::before {
 .shop-heading {
     background-image: url(../img/shop-banner.jpeg);
     background-size: cover;
-    background-position: left top;
+    /*background-position: left top;*/
 }
 
 .blog-heading {
