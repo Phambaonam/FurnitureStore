@@ -1,0 +1,50 @@
+.cart-container table.cart th.product-thumbnail-wishlist {
+    padding-left: 30px;
+}
+
+.cart-container table.cart .product-thumbnail-wishlist {
+    width: 20%;
+    padding-left: 20px;
+}
+
+.cart-container table.cart .product-name-wishlist {
+    width: 22%
+}
+
+.cart-container table.cart .product-price-wishlist {
+    width: 16%;
+}
+
+.wishlist-container .product-status-wishlist {
+    width: 16%;
+}
+
+.wishlist-container .product-action-wishlist {
+    width: 22%;
+}
+
+.cart-container table.cart .product-remove-wishlist {
+    width: 10%;
+    text-align: center;
+}
+
+td.product-price-wishlist::after {
+    content: '₫';
+}
+
+.cart-container table.cart .product-remove-wishlist button {
+    background: none;
+    border: 0;
+    outline: none;
+}
+
+.cart-container table.cart .product-thumbnail-wishlist a img {
+    margin-top: 0px;
+}
+
+.wishlist-container .product-action-wishlist button.link-to {
+    border: 0;
+    outline: none;
+    margin: 20px 0;
+    padding: 10px;
+}
