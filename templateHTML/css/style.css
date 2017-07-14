@@ -23,8 +23,8 @@ label {
 header {
     /*height: 151px;*/
     position: relative;
-    z-index: 13;
-}
+    z-index: 1050;
+}F
 
 p.ncc {
     margin: 5px 0;
@@ -1702,8 +1702,6 @@ a.blog-link:hover::before, .blog-link a:hover::before {
 
 .shop-heading {
     background-image: url(../img/shop-banner.jpeg);
-    background-size: cover;
-    /*background-position: left top;*/
 }
 
 .blog-heading {

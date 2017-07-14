@@ -1,3 +1,13 @@
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.event-heading {
+    background: url(../img/shop-banner.jpeg);
+    background-size: cover;
+}
+
 #introduction {
     width: 100%;
     height: 102px;
@@ -167,12 +177,15 @@
     color: #ffffff;
     background-color: #00BFA5;
 }
-.code-sale-modal .modal-footer button:hover  {
+
+.code-sale-modal .modal-footer button:hover {
     background-color: #00BFA5;
 }
+
 .code-sale-modal .modal-footer button.btn.btn-default {
     color: #ffffff;
 }
+
 .sale-off-right-button > .sale-off-right-code-cover {
     background-color: #0393be;
     border-radius: 6px 0 0 6px;
@@ -245,7 +258,8 @@
     color: #ffffff;
     background-color: #189EFF;
 }
-.code-sale-modal-content button:hover, .code-sale-modal-content button:focus  {
+
+.code-sale-modal-content button:hover, .code-sale-modal-content button:focus {
     color: #ffffff;
 }
 
