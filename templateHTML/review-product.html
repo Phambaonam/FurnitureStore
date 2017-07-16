@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ hàng</title>
+    <title>Chi tiết sản phẩm</title>
     <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/review-product.css">
     <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
 </head>
@@ -161,127 +162,74 @@
         </div>
     </div>
 </header>
-<div class="container-fluid page-heading cart-heading">
-    <div class="heading-content">
-        <h1>Giỏ hàng</h1>
-        <p></p>
-        <ol class="breadcrumb">
-            <li><a href="home.html">Trang chủ</a></li>
-            <li class="active">Giỏ hàng</li>
-        </ol>
-    </div>
-</div>
 <div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="cart-container">
-                <table class="cart">
-                    <thead>
-                    <tr>
-                        <th class="product-thumbnail">Sản phẩm</th>
-                        <th class="product-name"><span class="hidden-mobile">Tên sản phẩm</span></th>
-                        <th class="product-price"><span class="hidden-mobile">Đơn giá</span></th>
-                        <th class="product-quantity"><span class="hidden-mobile">Số lượng</span></th>
-                        <th class="product-subtotal">Thành tiền</th>
-                        <th class="product-remove">&nbsp;</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="cart-item">
-                        <td class="product-thumbnail">
-                            <a href="shop-detail.html">
-                                <img src="img/riflesso_1.jpg">
-                            </a>
-                        </td>
-                        <td class="product-name">
-                            <a href="shop-detail.html">Tủ Riflesso</a>
-                        </td>
-                        <td class="product-price">
-                            4400000
-                        </td>
-                        <td class="product-quantity">
-                            <div class="quantity">
-                                <button class="qty-decrease" onclick="" type="button">-</button>
-                                <input id="qty" type="text" name="quantity" value="1" class="" size="4">
-                                <button class="qty-increase" onclick="" type="button">+</button>
-                            </div>
-                        </td>
-                        <td class="product-subtotal">
-
-                        </td>
-                        <td class="product-remove">
-                            <button><i class="fa fa-trash-o"></i></button>
-                        </td>
-                    </tr>
-                    <tr class="cart-item">
-                        <td class="product-thumbnail">
-                            <a href="shop-detail.html">
-                                <img src="img/rotonda_1.jpg" alt="">
-                            </a>
-                        </td>
-                        <td class="product-name">
-                            <a href="shop-detail.html">Bàn La Rotonda </a>
-                        </td>
-                        <td class="product-price">
-                            3200000
-                        </td>
-                        <td class="product-quantity">
-                            <div class="quantity">
-                                <button class="qty-decrease" onclick="" type="button">-</button>
-                                <input id="qty" type="text" name="quantity" value="1" class="" size="4">
-                                <button class="qty-increase" onclick="" type="button">+</button>
-                            </div>
-                        </td>
-                        <td class="product-subtotal">
-
-                        </td>
-                        <td class="product-remove">
-                            <button><i class="fa fa-trash-o"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="6" class="actions">
-                            <button class="empty-cart link-to hidden-mobile">Xóa toàn bộ</button>
-                            <a href="shop.html" class="link-to continue">Tiếp tục mua hàng <i
-                                    class="fa fa-angle-right"></i></a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+    <div style="width:auto; height:60px;"></div>
+    <div id="introduction">
+        <h2>Cám ơn bạn đã mua sản phẩm này. Bạn có thể gửi nhận xét cho chúng tôi.</h2>
+    </div>
+    <div style="width:auto; height:50px; "></div>
+    <div class="main-container">
+        <div class="review-product">
+            <div class="images">
+                <img src="img/product_2b.jpg">
             </div>
-            <div class="cart-checkout container">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="cart-coupon">
-                        <h3>Mã giảm giá</h3>
-                        <input type="text" value="" placeholder="Nhập mã giảm giá">
-                        <button class="apply-coupon link-to">Áp dụng mã giảm giá</button>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="cart-total">
-                        <h3>Tổng tiền</h3>
-                        <table>
-                            <tbody>
-                            <tr class="cart-subtotal">
-                                <th>Tạm tính</th>
-                                <td></td>
-                            </tr>
-                            <tr class="cart-discount">
-                                <th>Giảm giá<span class="discount-rate"></span></th>
-                                <td>0</td>
-                            </tr>
-                            <tr class="order-total">
-                                <th>Tổng tiền</th>
-                                <td class="amount"><strong></strong></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <div class="checkout-proceed">
-                            <a href="payment.html" class="link-to checkout-button">Tiến hành đặt hàng <i
-                                    class="fa fa-angle-right"></i></a>
+            <h2 class="product-title">Signature Chair</h2>
+            <ul class="review">
+                <li>
+                    <a href="javascript:void(0)">
+                    <span class="rating-detail">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </span>
+                        <span class="fontSize-rating"> <span>21</span> Ratings and Reviews</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="product-category">
+                <b>Danh mục:</b> <a href="shop.html">Ghế</a>, <a href="shop.html">Ghế tựa</a>
+            </div>
+        </div>
+        <div class="product-customer-box">
+            <h2>Nhận xét của bạn</h2>
+            <div class="product-customer-col-4 js-customer-col-4">
+                <form action="" method="post" id="addReviewFrm" novalidate="novalidate" class="bv-form">
+                    <div class="rate form-group has-feedback" id="rating_wrapper">
+                        <label>1. Đánh giá của bạn về sản phẩm này:</label>
+                        <div class="rating-input">
+                            <i class="glyphicon glyphicon-star-empty" data-value="1"></i>
+                            <i class="glyphicon glyphicon-star-empty" data-value="2"></i>
+                            <i class="glyphicon glyphicon-star-empty" data-value="3"></i>
+                            <i class="glyphicon glyphicon-star-empty" data-value="4"></i>
+                            <i class="glyphicon glyphicon-star-empty" data-value="5"></i>
+                            <a class="rating-clear" style="display:none;" href="javascript:void(0)">
+                                <span class="glyphicon glyphicon-remove"></span> xóa
+                            </a>
+                            <input type="number" name="rating_star" id="rating_star" data-clearable="xóa" class="rating hidden" data-min="1" data-max="5" data-bv-field="rating_star">
+                            <i class="form-control-feedback" data-bv-icon-for="rating_star" style="display: none;"></i>
                         </div>
+                        <small class="help-block" data-bv-validator="callback" data-bv-for="rating_star" data-bv-result="NOT_VALIDATED" style="display: none;">
+                            Vui lòng chọn đánh giá của bạn về sản phẩm này.
+                        </small>
+                        <small class="help-block" data-bv-validator="integer" data-bv-for="rating_star"
+                               data-bv-result="NOT_VALIDATED" style="display: none;">Please enter a valid
+                            number
+                        </small>
                     </div>
-                </div>
+
+                    <div class="title form-group" id="title_wrapper">
+                        <label for="review_title">2. Tiêu đề của nhận xét:</label>
+                        <input type="text" placeholder="Nhập tiêu đề nhận xét (không bắt buộc)" name="title" id="review_title" class="form-control input-sm">
+                    </div>
+
+                    <div class="review-content form-group has-feedback has-error">
+                        <label for="review_detail">3. Viết nhận xét của bạn vào bên dưới:</label>
+                        <textarea placeholder="Nhận xét của bạn về sản phẩm này" class="form-control" name="detail" id="review_detail" cols="30" rows="10" data-bv-field="detail"></textarea>
+                    </div>
+
+                    <div class="action">
+                        <button type="submit" class="btn btn-default btn-add-review ">Gửi nhận xét</button>
+                    </div>
+                </form>
+
             </div>
         </div>
     </div>
@@ -326,9 +274,9 @@
         </div>
         <div class="row footer-bot">
             <a href="#" title="Kết nối qua Facebook"><i class="fa fa-facebook-official"></i></a>
-            <a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i>
-                <a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i>
-                    <a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i>
+            <a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i></a>
+            <a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i></a>
+            <a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i></a>
         </div>
     </div>
     <div class="container-fluid copyright">
@@ -371,12 +319,12 @@
         if (click === 'onclicked') {
             $('header').css('height', '151px');
             $('header .navbar').css('display', 'flex');
-//            console.log(click);
+            console.log(click);
             click = 'clicked again'
         } else if (click === 'clicked again') {
             $('header').css('height', '71px');
             $('header .navbar').css('display', 'none');
-//            console.log(click);
+            console.log(click);
             click = 'onclicked';
         }
         /*******************/
@@ -403,14 +351,31 @@
          /*******************/
         $(window).bind('scroll', function () {
             if (click === 'onclicked' && $(window).scrollTop() < 460) {
-//                console.log(3);
+                console.log(3);
                 $('header .navbar').css('display', 'flex');
             } else if (click === 'onclicked' && $(window).scrollTop() > 460) {
-//                console.log(4);
+                console.log(4);
                 $('header .navbar').css('display', 'none');
             }
         })
     });
 </script>
+<script>
+    $('.review_action').click(function () {
+        $(this).each(function () {
+            $('.quick-reply').css('display', 'block')
+        })
+    });
+    $('.js-customer-button').click(function(){
+        var buttonValue = $('.js-customer-button').text()
+        if( buttonValue === 'Viết nhận xét của bạn'){
+            $('.product-customer-col-4').css('display','block')
+            $('.js-customer-button').text('Đóng');
+        } else if( buttonValue === 'Đóng'){
+            $('.product-customer-col-4').css('display','none')
+            $('.js-customer-button').text('Viết nhận xét của bạn');
+        }
+    });
+</script>s
 </body>
 </html>
