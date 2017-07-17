@@ -1,9 +1,21 @@
-.form-body {
+.order-success {
     border: 1px solid #DDDDDD;
     padding: 20px 15px 0;
     background: #F7F7F7;
 }
-
+.order-success h5 a {
+    color:#00B6F0;
+}
+.code-order {
+    width: 100%;
+    height: 45px;
+    background: #58B712;
+    text-align: center;
+}
+.code-order span {
+    color: #fff;
+    font-size: 30px;
+}
 .shipping-header {
     background: #fff;
     padding-top: 25px;
@@ -90,41 +102,12 @@
 .shipping-header .bs-wizard>.bs-wizard-step:last-child>.progress {
     width: 50%;
 }
-.shipping-header .bs-wizard>.bs-wizard-step.disabled>.bs-wizard-dot {
-    background-color: #fff;
-    color: #000;
-}
-.shipping-header .bs-wizard>.bs-wizard-step.disabled>.bs-wizard-stepnum {
-    color: #a3a3a3;
+.shipping-header .bs-wizard>.bs-wizard-step:last-child.active>.progress>.progress-bar {
+    width: 100%;
 }
 .ship-form {
     max-width: 550px;
     margin: 0 auto;
     background: #F7F7F7;
-}
-.form-group {
-    margin-bottom: 15px;
-    height:36px;
-}
-.form-group label {
-    /*font-size: 12px;*/
-    text-align: left;
-}
-.label-input {
-    width:20%;
-    float:left;
-    margin-top:8px;
-}
-.input-wrap {
-    width:79%;
-    float:left;
-}
-.btn-goto, .btn-goto:hover  {
-    background: #4CAF50;
-    border-color: #4CAF50;
-    color: #fff;
-    margin-bottom: 20px;
-    padding: 9px 12px;
-    width: 225px;
-    margin-left: 40%;
+    margin-bottom: 30px;
 }

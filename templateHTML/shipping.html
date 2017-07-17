@@ -13,258 +13,142 @@
     <link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="header-form-container">
-        <div class="container">
-            <div class="form-search">
-                <button type="button" class="navbar-toggle" id="menu-scroll">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <form action="#" id="search_form">
-                    <div class="search-wrap">
-                        <input type="text" name="q" placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ...">
-                        <button type="submit">
-                            <span>Tìm Kiếm</span>
-                        </button>
-                    </div>
-                </form>
+<div class="shipping-header">
+    <div class="container">
+        <div class="row row-style-1">
+            <div class="col-lg-2 visible-lg-block">
+                <a href="home.html">
+                    <img src="img/logo-min.png" style="max-width:100px;margin-left: 110px;margin-top: 15px;" class="img-responsive"
+                                         alt="Image">
+                </a>
             </div>
-            <div class="header-link">
-                <div class="user-profile ">
-                    <div class="before-log">
-                        <button data-toggle="modal" data-tabs="login" data-target=".user-modal" class="user">Đăng nhập
-                        </button>
-                        <button data-toggle="modal" data-tabs="signup" data-target=".user-modal" class="user">Đăng ký
-                        </button>
-                    </div>
-                    <div class="logged">
-                        <!-- <i class="fa fa-user-o"></i> -->
-                        <img src="img/feedback_1.jpg">
-                        <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                Đỗ Hoàng Hiếu
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="user-account.html">Tài khoản của tôi</a></li>
-                                <li><a href="order.html">Đơn hàng của tôi</a></li>
-                                <li><a href="wishlist.html">Danh sách Yêu thích</a></li>
-                                <li><a href="home.html">Đăng xuất</a></li>
-                            </ul>
+            <div class="col-lg-8">
+                <div class="row bs-wizard">
+
+                    <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 bs-wizard-step complete">
+                        <div class="text-center bs-wizard-stepnum">
+                            <span>Đăng Nhập</span>
                         </div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <span class="bs-wizard-dot">1</span>
                     </div>
-                </div>
-                <div id="header-cart">
-                    <div class="cart-box mycart">
-                        <a href="cart.html" class="header-cart item">
-                            <i class="fa fa-shopping-cart"></i>
-                            Giỏ Hàng
-                            <span class='cart-count total'>0</span>
-                        </a>
-                        <a href="wishlist.html" class="header-cart item">
-                            <i class="fa fa-heart-o"></i>
-                            Yêu Thích
-                            <span class='cart-count'>0</span>
-                        </a>
+
+                    <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 bs-wizard-step active">
+                        <div class="text-center bs-wizard-stepnum">
+                            <span class="hidden-xs">Địa Chỉ Giao Hàng</span>
+                            <span class="visible-xs-inline-block">Địa Chỉ</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <span class="bs-wizard-dot">2</span>
                     </div>
+
+                    <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 bs-wizard-step disabled">
+                        <div class="text-center bs-wizard-stepnum">
+                            <span class="hidden-xs">Thanh Toán &amp; Đặt Mua</span>
+                            <span class="visible-xs-inline-block">Thanh Toán</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <span class="bs-wizard-dot">3</span>
+                    </div>
+
                 </div>
+            </div>
+            <div class="col-lg-2 visible-lg-block hotline">
+                <img src="https://vcdn.tikicdn.com/assets/img/hotline.png" height="42" width="176" alt="">
             </div>
         </div>
     </div>
-
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="menu row">
-                <div class="collapse navbar-collapse" id="menu-collapse">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li><a href="home.html">Trang chủ</a></li>
-                        <li><a href="shop.html">Sản phẩm</a></li>
-                        <li><a href="project.html">Dự án</a></li>
-                        <li><a href="colllection.html">Bộ sưu tập</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="event.html">Event</a></li>
-                        <li><a href="about.html">Về Min</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Liên hệ</a></li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-        <a class="logo" href="home.html"><img src="img/logo-min.png"></a>
-        <div id="search-form">
-            <form>
-                <input type="text" placeholder="Nhập từ khóa cần tìm">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-    </nav>
-    <div class="modal fade user-modal" tabindex="-1">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li id="login-indicator" class="active">
-                        <a href="#login" role="tab" data-toggle="tab">Đăng nhập</a>
-                    </li>
-                    <li id="signup-indicator">
-                        <a href="#signup" role="tab" data-toggle="tab">Đăng ký</a>
-                    </li>
-                </ul>
-
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active fade in" id="login">
-                        <form>
-                            <div class="input-field">
-                                <input type="email" name="Email" id="email" placeholder="Email"/>
-                            </div>
-                            <div class="input-field">
-                                <input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
-                            </div>
-                            <div class="input-field check-field">
-                                <input type="checkbox" id="remember" name="remember"/><label for="remember">Ghi nhớ tài
-                                khoản</label><br/>
-                            </div>
-                            <div class="input-field">
-                                <input id="login-btn" data-dismiss="modal" value="Đăng nhập"/>
-                            </div>
-                            <button data-toggle="modal" data-target="#reset-password" data-dismiss="modal"
-                                    class="btn btn-default"><i class="fa fa-question-circle-o"></i> Quên mật khẩu?
-                            </button>
-                        </form>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="signup">
-                        <form>
-                            <div class="input-field">
-                                <input type="email" name="Email" id="email" placeholder="Email"/>
-                            </div>
-                            <div class="input-field">
-                                <input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
-                            </div>
-                            <div class="input-field check-field">
-                                <input type="checkbox" id="remember" name="remember"/><label for="remember">Hiển thị mật
-                                khẩu</label><br/>
-                            </div>
-                            <div class="input-field">
-                                <input type="text" name="Name" id="name" placeholder="Họ tên"/>
-                            </div>
-                            <div class="input-field">
-                                <input type="text" name="Phone" id="phone" placeholder="Số điện thoại"/>
-                            </div>
-                            <div class="input-field">
-                                <input id="signup-btn" type="submit" value="Đăng ký"/>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="container payment-main">
+</div>
+<div class="container ">
     <div class="row">
-        <div class="shipping-header">
-            <div class="container">
-                <div class="row row-style-1">
-                    <div class="col-lg-2 visible-lg-block">
-                        <a href="/"><img src="https://vcdn.tikicdn.com/assets/img/logo-big.png" height="62" width="149" class="img-responsive" alt="Image"></a>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="row bs-wizard">
-
-                            <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 bs-wizard-step complete">
-                                <div class="text-center bs-wizard-stepnum">
-                                    <span>Đăng Nhập</span>
-                                </div>
-                                <div class="progress"><div class="progress-bar"></div></div>
-                                <span class="bs-wizard-dot">1</span>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 bs-wizard-step active">
-                                <div class="text-center bs-wizard-stepnum">
-                                    <span class="hidden-xs">Địa Chỉ Giao Hàng</span>
-                                    <span class="visible-xs-inline-block">Địa Chỉ</span>
-                                </div>
-                                <div class="progress"><div class="progress-bar"></div></div>
-                                <span class="bs-wizard-dot">2</span>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 bs-wizard-step disabled">
-                                <div class="text-center bs-wizard-stepnum">
-                                    <span class="hidden-xs">Thanh Toán &amp; Đặt Mua</span>
-                                    <span class="visible-xs-inline-block">Thanh Toán</span>
-                                </div>
-                                <div class="progress"><div class="progress-bar"></div></div>
-                                <span class="bs-wizard-dot">3</span>
-                            </div>
-
+        <div style="height: 15px;"></div>
+        <h2>2. Địa chỉ giao hàng</h2>
+        <div class="form-body">
+            <div class="ship-form">
+                <form>
+                    <div class="form-group">
+                        <div class="label-input">
+                            <label for="full_name">Họ tên</label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" class="form-control" id="name" placeholder="Họ tên">
                         </div>
                     </div>
-                    <div class="col-lg-2 visible-lg-block hotline">
-                        <img src="https://vcdn.tikicdn.com/assets/img/hotline.png" height="42" width="176" alt="">
+                    <div class="form-group">
+                        <div class="label-input">
+                            <label for="telephone"> Điện thoại di động</label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" class="form-control" id="phone" placeholder="Số điện thoại">
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <div class="label-input">
+                            <label for="province"> Tỉnh/Thành phố </label>
+                        </div>
+                        <div class="input-wrap">
+                            <select class="form-control">
+                                <option disabled selected hidden>Tỉnh / Thành phố</option>
+                                <option>Hà Nội</option>
+                                <option>Hồ Chí Minh</option>
+                                <option>Đà Nẵng</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label-input">
+                            <label for="district">Quận/Huyện</label>
+                        </div>
+                        <div class="input-wrap">
+                            <select class="form-control">
+                                <option disabled selected hidden>Quận / Huyện</option>
+                                <option>Ba Đình</option>
+                                <option>Đống Đa</option>
+                                <option>Hai Bà Trưng</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label-input">
+                            <label for="street"> Phường/Xã </label>
+                        </div>
+                        <div class="input-wrap">
+                            <select class="form-control">
+                                <option disabled selected hidden>Phường / Xã</option>
+                                <option>Cát Linh</option>
+                                <option>Kim Liên</option>
+                                <option>Ô Chợ Dừa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="label-input">
+                            <label for="address"> Địa chỉ </label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" class="form-control" id="address" placeholder="Địa chỉ">
+                        </div>
+                    </div>
+                    <a href="payment.html" class="btn btn-default btn-goto">Gửi đến địa chỉ này</a>
+                </form>
             </div>
         </div>
 
     </div>
 </div>
-<a href="#"><i class="fa fa-angle-up back-top"></i></a>
-<footer>
-    <div class="container">
-        <div class="row footer-top">
-            <div class="col-xs-6 col-md-3 footer-item">
-                <h4>Thông tin liên hệ</h4>
-                <ul>
-                    <li><i class="fa fa-map-marker"></i>Đ/c: 40 Giảng Võ, Đống Đa, Hà Nội</li>
-                    <li><i class="fa fa-mobile"></i>Hotline: 0986090925</li>
-                    <li><i class="fa fa-envelope-o"></i>Email: hieu.do212@gmail.com</li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-md-3 footer-item">
-                <h4>Thời gian mở cửa</h4>
-                <ul>
-                    <li>Thứ 2 - thứ 6: 8AM - 10PM</li>
-                    <li>Thứ 7: 9AM - 8PM</li>
-                    <li>Nghỉ Chủ Nhật và các ngày Lễ Tết</li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-md-3 footer-item">
-                <h4>Hỗ trợ khách hàng</h4>
-                <ul>
-                    <li><a href="contact.html">Liên hệ & Góp ý</a></li>
-                    <li><a href="#">Hướng dẫn mua hàng online</a></li>
-                    <li><a href="#">Câu hỏi thường gặp</a></li>
-                    <li><a href="#">Chính sách bảo mật</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-md-3 footer-item">
-                <h4>Chính sách mua hàng</h4>
-                <ul>
-                    <li><a href="#">Chính sách bảo hành, đổi trả</a></li>
-                    <li><a href="#">Chính sách hội viên</a></li>
-                    <li><a href="#">Giao hàng và lắp đặt</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row footer-bot">
-            <a href="#" title="Kết nối qua Facebook"><i class="fa fa-facebook-official"></i></a>
-            <a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i>
-                <a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i>
-                    <a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i>
-        </div>
-    </div>
-    <div class="container-fluid copyright">
-        <div class="row">
-            <p>Copyright 2017 <i class="fa fa-copyright"></i> Designed by Hieudo</p>
-        </div>
-    </div>
-</footer>
-<script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
+<div style="height: 100px;"></div>
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
 <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/script.js" ></script>
+<script type="text/javascript" src="js/script.js"></script>
 <script>
 
 </script>
