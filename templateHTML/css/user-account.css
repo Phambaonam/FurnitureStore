@@ -180,8 +180,6 @@ button.save-change:hover {
 }
 
 .deli-info h4, .payment-info h4 {
-    /*position: relative;*/
-    /*padding-left: 10px;*/
     margin-bottom: 20px;
     padding-bottom: 10px;
     display: inline-block;
@@ -189,16 +187,6 @@ button.save-change:hover {
     text-transform: uppercase;
 }
 
-/*.deli-info h4::before, .payment-info h4::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 3px;
-	height: 3px;
-	transform: translateY(-50%);
-	background: #336699;
-}*/
 .add-item {
     border-top: solid 1px #e7e7e7;
 }

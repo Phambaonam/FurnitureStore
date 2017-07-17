@@ -1,0 +1,63 @@
+.shipping-header {
+    background: #fff;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+.visible-lg-block {
+    display: block!important;
+}
+.shipping-header .bs-wizard>.bs-wizard-step {
+    padding: 0;
+    position: relative;
+}
+.shipping-header .bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
+    color: #595959;
+    font-size: 14px;
+}
+
+.shipping-header .bs-wizard>.bs-wizard-step:first-child>.progress {
+    left: 50%;
+    width: 50%;
+}
+.shipping-header .bs-wizard>.bs-wizard-step.complete>.progress>.progress-bar {
+    width: 100%;
+}
+.shipping-header .bs-wizard>.bs-wizard-step>.bs-wizard-dot {
+    background: #00b6f0;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    line-height: 26px;
+    -webkit-box-shadow: #666 0 0 2px;
+    -moz-box-shadow: #666 0 0 2px;
+    box-shadow: #666 0 0 2px;
+}
+.shipping-header .row-style-1 .hotline {
+    padding-left: 0;
+    line-height: 66px;
+}
+.bs-wizard>.bs-wizard-step>.progress>.progress-bar {
+    width: 0;
+    box-shadow: none;
+    background: #00b6f0;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    line-height: 20px;
+    color: #fff;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+.progress-bar {
+    font-size: 12px;
+    text-align: center;
+}

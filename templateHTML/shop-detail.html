@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/shop-detail.css">
+    <link rel="stylesheet" type="text/css" href="css/description-product.css">
     <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
 </head>
@@ -544,12 +545,7 @@
         <div class="col-item col-xs-6 col-md-3">
             <div class="item-container">
                 <div class="photo">
-                    <div id="product1" class="carousel slide carousel-inner" data-ride="carousel"
-                         data-interval="false">
-                        <div class="item active">
-                            <img src="img/product_1a.jpg">
-                        </div>
-                    </div>
+                    <img src="img/product_1a.jpg">
                     <div class="vertical-icon">
                         <a href="#"><i class="fa fa-heart-o"></i></a>
                         <a href="javascript:void(0)" class="buy"><i class="fa fa-shopping-cart"></i></a>
@@ -566,9 +562,16 @@
                                     <strong>$99.21</strong>
                                    </span>
                     </p>
-                    <p class="rating">
-                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>(5)</span>
-                    </p>
+
+                    <div class="rating">
+                        <span id="star1" class="star fa fa-star" data-rating="1"></span>
+                        <span id="star2" class="star fa fa-star" data-rating="2"></span>
+                        <span id="star3" class="star fa fa-star" data-rating="3"></span>
+                        <span id="star4" class="star fa fa-star" data-rating="4"></span>
+                        <span id="star5" class="star fa fa-star" data-rating="5"></span>
+                        <span id="numberStar">&#40<span id="number_rating">1</span>&#41</span>
+                    </div>
+
                 </div>
             </div>
         </div>
